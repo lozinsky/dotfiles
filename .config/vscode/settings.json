@@ -1,0 +1,49 @@
+{
+  // Editor
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 13.5,
+  "editor.tabSize": 2,
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.renderLineHighlight": "none",
+  "editor.minimap.enabled": false,
+  "editor.dragAndDrop": false,
+  "editor.smoothScrolling": true,
+  "editor.formatOnSave": true,
+  "editor.folding": false,
+  "editor.wordWrap": "on",
+  "editor.renderIndentGuides": false,
+  "editor.glyphMargin": false,
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.suggest.localityBonus": true,
+  // Terminal
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  // Explorer
+  "explorer.autoReveal": false,
+  "explorer.openEditors.visible": 0,
+  // Workbench
+  "workbench.activityBar.visible": false,
+  "workbench.settings.editor": "json",
+  "workbench.editor.labelFormat": "short",
+  "workbench.colorTheme": "Gatito Theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.showIcons": false,
+  "workbench.iconTheme": null,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.enableExperiments": false,
+  // Status
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.statusBar.visible": false,
+  "cSpell.showStatus": false,
+  // Files
+  "files.trimTrailingWhitespace": true,
+  "files.defaultLanguage": "javascript",
+  // Search
+  "search.location": "panel",
+  // Telemetry
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false
+}
