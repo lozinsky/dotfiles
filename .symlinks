@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+ln -sf "$DOTFILES/.config/zshrc" "$HOME/.zshrc"
+
+ln -sf "$DOTFILES/.config/gitconfig" "$HOME/.gitconfig"
+
+ln -sf "$DOTFILES/.config/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
