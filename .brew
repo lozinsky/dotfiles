@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+if test ! $(which brew); then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+brew upgrade
+
+# Taps
+brew tap homebrew/cask
+
+# Binaries
+brew install git
+brew install zsh
+
+# Development
+brew install node
+brew install yarn
+
+# Applications
+brew cask install google-chrome
+brew cask install keka
+brew cask install macs-fan-control
+brew cask install transmission
+brew cask install tunnelblick
+brew cask install slack
+brew cask install visual-studio-code
+brew cask install sublime-merge
+brew cask install iterm2
+brew cask install telegram
+brew cask install vlc
+
+brew cleanup
