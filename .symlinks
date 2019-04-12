@@ -5,3 +5,5 @@ ln -sf "$DOTFILES/.config/zshrc" "$HOME/.zshrc"
 ln -sf "$DOTFILES/.config/gitconfig" "$HOME/.gitconfig"
 
 ln -sf "$DOTFILES/.config/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+
+ln -sf "$DOTFILES/.config/smerge/Preferences.sublime-settings" "$HOME/Library/Application Support/Sublime Merge/Packages/User/Preferences.sublime-settings"
