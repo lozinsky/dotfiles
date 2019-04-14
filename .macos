@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+COMPUTER_NAME="honey"
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+sudo -v
+
+# Sharing: set computer name
+sudo scutil --set LocalHostName "$COMPUTER_NAME"
+sudo scutil --set ComputerName "$COMPUTER_NAME"
+
+# Dock: set the icon size
+defaults write com.apple.dock tilesize -int 46
+
+# Dock: change minimize/maximize window effect
+defaults write com.apple.dock mineffect -string "scale"
+
+# Dock: minimize windows into their application’s icon
+defaults write com.apple.dock minimize-to-application -bool true
+
+# Dock: don’t show recent applications
+defaults write com.apple.dock show-recents -bool false
+
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Finder: disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Finder: when performing a search, search the current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Dashboard: disable
+defaults write com.apple.dashboard mcx-disabled -bool true
+
+# Kill affected apps
+for app in "Dock" "Finder"; do
+  killall "${app}" > /dev/null 2>&1
+done
