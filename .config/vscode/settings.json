@@ -43,6 +43,13 @@
   "files.defaultLanguage": "javascript",
   // Search
   "search.location": "panel",
+  // Linting
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ],
   // Telemetry
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false
