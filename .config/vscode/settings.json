@@ -39,6 +39,8 @@
   "workbench.statusBar.feedback.visible": false,
   "workbench.statusBar.visible": false,
   "cSpell.showStatus": false,
+  // Window
+  "window.zoomLevel": 0,
   // Files
   "files.trimTrailingWhitespace": true,
   "files.defaultLanguage": "javascript",
