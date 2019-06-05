@@ -17,6 +17,7 @@
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.suggest.localityBonus": true,
+  "breadcrumbs.enabled": false,
   // Terminal
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.cursorStyle": "line",
