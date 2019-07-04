@@ -36,7 +36,6 @@
   "workbench.editor.tabCloseButton": "off",
   "workbench.enableExperiments": false,
   // Status
-  "workbench.statusBar.feedback.visible": false,
   "workbench.statusBar.visible": false,
   "cSpell.showStatus": false,
   // Window
