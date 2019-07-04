@@ -35,6 +35,7 @@
   "workbench.iconTheme": null,
   "workbench.editor.tabCloseButton": "off",
   "workbench.enableExperiments": false,
+  "workbench.tree.renderIndentGuides": "none",
   // Status
   "workbench.statusBar.visible": false,
   "cSpell.showStatus": false,
