@@ -1,7 +1,7 @@
 {
   // Editor
   "editor.fontFamily": "Dank Mono",
-  "editor.fontSize": 13.5,
+  "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.fontLigatures": true,
   "editor.cursorBlinking": "smooth",
