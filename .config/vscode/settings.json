@@ -17,14 +17,19 @@
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.suggest.localityBonus": true,
+
+  // Breadcrumbs
   "breadcrumbs.enabled": false,
+
   // Terminal
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
+
   // Explorer
   "explorer.autoReveal": false,
   "explorer.openEditors.visible": 0,
+
   // Workbench
   "workbench.activityBar.visible": false,
   "workbench.settings.editor": "json",
@@ -36,23 +41,29 @@
   "workbench.editor.tabCloseButton": "off",
   "workbench.enableExperiments": false,
   "workbench.tree.renderIndentGuides": "none",
+
   // Status
   "workbench.statusBar.visible": false,
-  "cSpell.showStatus": false,
+
   // Window
   "window.zoomLevel": 0,
+  "window.title": "${activeEditorMedium} ${dirty}",
+
   // Files
   "files.trimTrailingWhitespace": true,
   "files.defaultLanguage": "javascript",
+
   // Search
   "search.location": "panel",
+
   // Linting
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    { "language": "typescript", "autoFix": true },
-    { "language": "typescriptreact", "autoFix": true }
+    "typescript",
+    "typescriptreact"
   ],
+
   // Telemetry
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false
