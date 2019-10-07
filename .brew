@@ -11,7 +11,6 @@ brew tap homebrew/cask
 
 # Binaries
 brew install git
-brew install zsh
 brew install node
 brew install yarn
 
