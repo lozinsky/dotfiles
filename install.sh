@@ -7,6 +7,7 @@ fi
 source "$DOTFILES/.brew"
 source "$DOTFILES/.oh-my-zsh"
 source "$DOTFILES/.yarn"
+source "$DOTFILES/.rustup"
 source "$DOTFILES/.vscode"
 source "$DOTFILES/.symlinks"
 source "$DOTFILES/.macos"
