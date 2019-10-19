@@ -1,0 +1,11 @@
+[
+  {
+    "key": "alt+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "workbench.action.tasks.runTask"
+  }
+]

@@ -11,4 +11,6 @@ ln -sf "$CONFIG/prettierrc" "$HOME/.prettierrc"
 
 ln -sf "$CONFIG/vscode/settings.json" "$APPLICATION_SUPPORT/Code/User/settings.json"
 
+ln -sf "$CONFIG/vscode/keybindings.json" "$APPLICATION_SUPPORT/Code/User/keybindings.json"
+
 ln -sf "$CONFIG/smerge/Preferences.sublime-settings" "$APPLICATION_SUPPORT/Sublime Merge/Packages/User/Preferences.sublime-settings"
