@@ -1,5 +1,4 @@
 {
-  // Editor
   "editor.fontFamily": "Dank Mono",
   "editor.fontSize": 14,
   "editor.tabSize": 2,
@@ -18,19 +17,15 @@
   "editor.hideCursorInOverviewRuler": true,
   "editor.suggest.localityBonus": true,
 
-  // Breadcrumbs
   "breadcrumbs.enabled": false,
 
-  // Terminal
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
 
-  // Explorer
   "explorer.autoReveal": false,
   "explorer.openEditors.visible": 0,
 
-  // Workbench
   "workbench.activityBar.visible": false,
   "workbench.settings.editor": "json",
   "workbench.editor.labelFormat": "short",
@@ -41,22 +36,16 @@
   "workbench.editor.tabCloseButton": "off",
   "workbench.enableExperiments": false,
   "workbench.tree.renderIndentGuides": "none",
-
-  // Status
   "workbench.statusBar.visible": false,
 
-  // Window
   "window.zoomLevel": 0,
   "window.title": "${activeEditorMedium} ${dirty}",
 
-  // Files
   "files.trimTrailingWhitespace": true,
   "files.defaultLanguage": "javascript",
 
-  // Search
   "search.location": "panel",
 
-  // Linting
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -64,7 +53,6 @@
     "typescriptreact"
   ],
 
-  // Telemetry
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false
 }
