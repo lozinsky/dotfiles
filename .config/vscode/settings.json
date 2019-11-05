@@ -54,5 +54,9 @@
   ],
 
   "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false
+  "telemetry.enableCrashReporter": false,
+
+  "[rust]": {
+    "editor.tabSize": 4
+  }
 }
