@@ -1,8 +1,5 @@
-# Logs
-*.log
-
-# Dependencies
-node_modules
-
-# Generated
 .DS_Store
+
+node_modules/
+npm-debug.log
+yarn-error.log
