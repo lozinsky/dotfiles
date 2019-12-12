@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+PACKAGES=(
+  nodemon
+  parcel-bundler
+  typescript
+  prettier
+  jest
+  eslint
+)
+
+npm i -g "${PACKAGES[@]}"

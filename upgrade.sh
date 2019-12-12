@@ -3,7 +3,8 @@
 brew upgrade
 brew cask upgrade
 
-yarn global upgrade --latest --silent
+npm -g outdated
+npm -g update
 
 rustup self update
 rustup update

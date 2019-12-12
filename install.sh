@@ -6,7 +6,7 @@ fi
 
 source "$DOTFILES/.brew"
 source "$DOTFILES/.oh-my-zsh"
-source "$DOTFILES/.yarn"
+source "$DOTFILES/.npm"
 source "$DOTFILES/.rustup"
 source "$DOTFILES/.vscode"
 source "$DOTFILES/.symlinks"

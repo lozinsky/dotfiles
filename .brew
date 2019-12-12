@@ -10,7 +10,6 @@ brew tap homebrew/cask
 # Binaries
 brew install git
 brew install node
-brew install yarn
 
 # Applications
 brew cask install google-chrome

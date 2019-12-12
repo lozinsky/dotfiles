@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-# Packages
-yarn global add nodemon
-yarn global add parcel-bundler
-yarn global add typescript
-yarn global add prettier
-yarn global add jest
-yarn global add eslint
