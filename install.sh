@@ -5,9 +5,9 @@ if [ ! -n "$DOTFILES" ]; then
 fi
 
 source "$DOTFILES/.brew"
-source "$DOTFILES/.oh-my-zsh"
 source "$DOTFILES/.npm"
 source "$DOTFILES/.rustup"
 source "$DOTFILES/.vscode"
 source "$DOTFILES/.symlinks"
 source "$DOTFILES/.macos"
+source "$DOTFILES/.oh-my-zsh"
