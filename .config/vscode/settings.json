@@ -46,13 +46,6 @@
 
   "search.location": "panel",
 
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
 
