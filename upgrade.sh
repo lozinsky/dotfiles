@@ -4,7 +4,7 @@ brew upgrade
 brew cask upgrade
 
 npm -g outdated
-npm -g update
+npm -g update --force
 
 rustup self update
 rustup update
