@@ -7,7 +7,7 @@ PACKAGES=(
   prettier
   jest
   eslint
-  serve
+  servor
 )
 
 npm i -g "${PACKAGES[@]}"
