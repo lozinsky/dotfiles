@@ -2,6 +2,7 @@
 
 if ! which rustup > /dev/null; then
   curl https://sh.rustup.rs -sSf | sh -s -- -y
+  source "$HOME/.cargo/env"
 fi
 
 rustup component add rls
