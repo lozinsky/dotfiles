@@ -13,4 +13,6 @@ ln -sf "$CONFIG/vscode/settings.json" "$APPLICATION_SUPPORT/Code/User/settings.j
 
 ln -sf "$CONFIG/vscode/keybindings.json" "$APPLICATION_SUPPORT/Code/User/keybindings.json"
 
+read -s -k $'?To continue, you need to open Sublime Merge.app manually.\nPress RETURN if you are done.\n'
+
 ln -sf "$CONFIG/smerge/Preferences.sublime-settings" "$APPLICATION_SUPPORT/Sublime Merge/Packages/User/Preferences.sublime-settings"
