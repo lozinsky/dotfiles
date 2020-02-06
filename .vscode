@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+read -s -k $'?To continue, you need to open Visual Studio Code.app manually.\nPress RETURN if you are done.\n'
+
 # Extensions
 code --install-extension wmaurer.change-case
 code --install-extension streetsidesoftware.code-spell-checker
