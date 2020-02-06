@@ -16,16 +16,12 @@
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.suggest.localityBonus": true,
-
   "breadcrumbs.enabled": false,
-
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
-
   "explorer.autoReveal": false,
   "explorer.openEditors.visible": 0,
-
   "workbench.activityBar.visible": false,
   "workbench.settings.editor": "json",
   "workbench.editor.labelFormat": "short",
@@ -37,18 +33,13 @@
   "workbench.enableExperiments": false,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.statusBar.visible": false,
-
   "window.zoomLevel": 0,
   "window.title": "${activeEditorMedium} ${dirty}",
-
   "files.trimTrailingWhitespace": true,
   "files.defaultLanguage": "javascript",
-
   "search.location": "panel",
-
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
-
   "[rust]": {
     "editor.tabSize": 4
   }
