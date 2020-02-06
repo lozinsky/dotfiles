@@ -36,7 +36,7 @@
   "window.zoomLevel": 0,
   "window.title": "${activeEditorMedium} ${dirty}",
   "files.trimTrailingWhitespace": true,
-  "files.defaultLanguage": "javascript",
+  "files.defaultLanguage": "${activeEditorLanguage}",
   "search.location": "panel",
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
