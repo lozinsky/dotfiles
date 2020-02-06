@@ -37,7 +37,6 @@
   "window.title": "${activeEditorMedium} ${dirty}",
   "files.trimTrailingWhitespace": true,
   "files.defaultLanguage": "${activeEditorLanguage}",
-  "search.location": "panel",
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "[rust]": {
