@@ -3,6 +3,7 @@ export DOTFILES="$HOME/.dotfiles"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 alias touch-bar-reset="killall ControlStrip"
+alias serve="servor --reload"
 
 ZSH_THEME="robbyrussell"
 
