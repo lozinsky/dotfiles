@@ -4,6 +4,7 @@ if [ ! -n "$DOTFILES" ]; then
   DOTFILES="$HOME/.dotfiles"
 fi
 
+source "$DOTFILES/.command-line-tools"
 source "$DOTFILES/.brew"
 source "$DOTFILES/.npm"
 source "$DOTFILES/.rustup"
