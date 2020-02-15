@@ -8,6 +8,7 @@ brew tap homebrew/cask
 
 brew install git
 brew install node
+brew install mas
 
 brew cask install google-chrome
 brew cask install firefox
