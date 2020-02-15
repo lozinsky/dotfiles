@@ -3,6 +3,8 @@
 brew upgrade
 brew cask upgrade
 
+mas upgrade
+
 npm -g outdated
 npm -g update --force
 
