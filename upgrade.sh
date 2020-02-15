@@ -2,6 +2,7 @@
 
 brew upgrade
 brew cask upgrade
+brew cleanup
 
 mas upgrade
 
@@ -10,5 +11,3 @@ npm -g update --force
 
 rustup self update
 rustup update
-
-brew cleanup
