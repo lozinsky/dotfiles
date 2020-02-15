@@ -4,14 +4,11 @@ if ! which brew > /dev/null; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Taps
 brew tap homebrew/cask
 
-# Binaries
 brew install git
 brew install node
 
-# Applications
 brew cask install google-chrome
 brew cask install firefox
 brew cask install keka
