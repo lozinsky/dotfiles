@@ -13,7 +13,7 @@ git clone git@github.com:lozinsky/dotfiles.git ~/.dotfiles
 Run the following command to start the installation
 
 ```sh
-source ~/.dotfiles/install.sh
+~/.dotfiles/install.sh
 ```
 
 ## Setting up iTerm2
