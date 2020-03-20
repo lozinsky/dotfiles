@@ -16,6 +16,7 @@
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.suggest.localityBonus": true,
+  "editor.columnSelection": false,
   "breadcrumbs.enabled": false,
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.cursorStyle": "line",
