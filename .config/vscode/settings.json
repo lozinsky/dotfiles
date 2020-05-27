@@ -11,6 +11,7 @@
   "editor.formatOnSave": true,
   "editor.folding": false,
   "editor.wordWrap": "on",
+  "editor.lineNumbers": "off",
   "editor.renderIndentGuides": false,
   "editor.glyphMargin": false,
   "editor.overviewRulerBorder": false,
