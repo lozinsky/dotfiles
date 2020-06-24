@@ -43,5 +43,8 @@
   "telemetry.enableCrashReporter": false,
   "[rust]": {
     "editor.tabSize": 4
+  },
+  "[markdown]": {
+    "editor.fontFamily": "Helvetica"
   }
 }
