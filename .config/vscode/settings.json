@@ -38,7 +38,7 @@
   "window.zoomLevel": 0,
   "window.title": "${activeEditorMedium} ${dirty}",
   "files.trimTrailingWhitespace": true,
-  "files.defaultLanguage": "${activeEditorLanguage}",
+  "files.defaultLanguage": "markdown",
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "[rust]": {
