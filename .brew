@@ -21,6 +21,6 @@ brew cask install visual-studio-code
 brew cask install sublime-merge
 brew cask install iterm2
 brew cask install telegram
-brew cask install vlc
+brew cask install iina
 
 brew cleanup
