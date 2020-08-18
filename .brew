@@ -22,5 +22,6 @@ brew cask install sublime-merge
 brew cask install iterm2
 brew cask install telegram
 brew cask install iina
+brew cask install bitwarden
 
 brew cleanup
