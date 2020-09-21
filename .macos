@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-COMPUTER_NAME="honey"
+COMPUTER_NAME="Pavel‘s MacBook"
+LOCAL_HOST_NAME="honey"
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -11,7 +12,7 @@ sudo -v
 # General #
 
 # Sharing: set computer name
-sudo scutil --set LocalHostName "$COMPUTER_NAME"
+sudo scutil --set LocalHostName "$LOCAL_HOST_NAME"
 sudo scutil --set ComputerName "$COMPUTER_NAME"
 
 # Dock, Dashboard #
