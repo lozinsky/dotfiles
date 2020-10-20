@@ -18,7 +18,7 @@ sudo scutil --set ComputerName "$COMPUTER_NAME"
 # Dock, Dashboard #
 
 # Dock: set the icon size
-defaults write com.apple.dock tilesize -int 46
+defaults write com.apple.dock tilesize -int 40
 
 # Dock: change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
