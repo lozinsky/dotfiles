@@ -41,6 +41,9 @@
   "files.defaultLanguage": "markdown",
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--fast"],
+  "go.useLanguageServer": true,
   "[rust]": {
     "editor.tabSize": 4
   },

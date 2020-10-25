@@ -1,6 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export DOTFILES="$HOME/.dotfiles"
 export PATH="$HOME/.cargo/bin:$PATH"
+export GOPATH="$HOME/.go"
 
 alias touch-bar-reset="killall ControlStrip"
 alias serve="servor --reload"
