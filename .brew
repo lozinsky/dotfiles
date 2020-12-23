@@ -14,7 +14,6 @@ brew install go
 brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask keka
-brew install --cask macs-fan-control
 brew install --cask transmission
 brew install --cask tunnelblick
 brew install --cask slack
