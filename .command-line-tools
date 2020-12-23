@@ -7,5 +7,5 @@ if ! pkgutil --packages | grep CL > /dev/null; then
 
   xcode-select --install
 
-  read -s -k $'?To continue, you need to wait while Command line tools will be installed.\nPress RETURN if you are done.\n'
+  read $'?To continue, you need to wait while Command line tools will be installed.\nPress RETURN if you are done.\n'
 fi
