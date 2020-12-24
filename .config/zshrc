@@ -6,6 +6,7 @@ export GOPATH="$HOME/.go"
 alias touch-bar-reset="killall ControlStrip"
 alias serve="servor --reload"
 
+ZSH_DISABLE_COMPFIX=true
 ZSH_THEME="robbyrussell"
 
 plugins=(git)
