@@ -2,6 +2,6 @@
   "font_face": "Dank Mono",
   "hide_menu": true,
   "tab_size": 2,
-  "editor_path": "/usr/local/bin/code",
-  "editor_argument_format": "-g ${file}:${line}:${col}"
+  "editor_path": "/opt/homebrew/bin/code",
+  "editor_argument_format": "-g ${file}:${line}:${col}",
 }
