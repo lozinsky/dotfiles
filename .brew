@@ -10,6 +10,7 @@ brew install git
 brew install node
 brew install mas
 brew install go
+brew install fish
 
 brew install --cask google-chrome
 brew install --cask firefox
