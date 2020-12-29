@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-COMPUTER_NAME="Pavel‘s MacBook"
+COMPUTER_NAME="Pavel’s MacBook"
 LOCAL_HOST_NAME="honey"
 
 # Close any open System Preferences panes, to prevent them from overriding
