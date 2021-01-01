@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 brew upgrade
-brew upgrade --cask
 brew cleanup
 
 mas upgrade
