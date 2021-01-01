@@ -1,4 +1,3 @@
-set -gx PATH "$HOME/.cargo/bin" $PATH
 set -gx PATH "/opt/homebrew/bin" $PATH
 
 set -gx DOTFILES "$HOME/.dotfiles"

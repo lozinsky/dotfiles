@@ -7,7 +7,6 @@ fi
 source "$DOTFILES/.command-line-tools"
 source "$DOTFILES/.brew"
 source "$DOTFILES/.npm"
-source "$DOTFILES/.rustup"
 source "$DOTFILES/.vscode"
 source "$DOTFILES/.symlinks"
 source "$DOTFILES/.macos"
