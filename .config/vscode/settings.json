@@ -45,9 +45,6 @@
   "go.lintTool": "golangci-lint",
   "go.lintFlags": ["--fast"],
   "go.useLanguageServer": true,
-  "[rust]": {
-    "editor.tabSize": 4
-  },
   "[markdown]": {
     "editor.fontFamily": "Helvetica"
   },

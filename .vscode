@@ -6,6 +6,4 @@ code --install-extension pawelgrzybek.gatito-theme
 code --install-extension esbenp.prettier-vscode
 code --install-extension jasonnutter.search-node-modules
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension rust-lang.rust
-code --install-extension bungcip.better-toml
 code --install-extension golang.go
