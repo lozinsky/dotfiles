@@ -5,3 +5,5 @@ set -gx GOPATH "$HOME/.go"
 
 alias serve "servor --reload"
 alias touch-bar-reset "killall ControlStrip"
+
+starship init fish | source
