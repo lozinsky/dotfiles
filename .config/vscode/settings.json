@@ -36,6 +36,7 @@
   "workbench.enableExperiments": false,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.statusBar.visible": false,
+  "workbench.editor.wrapTabs": true,
   "window.zoomLevel": 0,
   "window.title": "${activeEditorMedium} ${dirty}",
   "files.trimTrailingWhitespace": true,
