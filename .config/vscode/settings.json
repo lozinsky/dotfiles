@@ -24,7 +24,6 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.shell.osx": "/opt/homebrew/bin/fish",
   "explorer.autoReveal": false,
-  "explorer.openEditors.visible": 0,
   "workbench.activityBar.visible": false,
   "workbench.settings.editor": "json",
   "workbench.editor.labelFormat": "short",
