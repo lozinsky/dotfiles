@@ -6,4 +6,4 @@ brew cleanup
 mas upgrade
 
 npm -g outdated
-npm -g update --force
+npm -g update
