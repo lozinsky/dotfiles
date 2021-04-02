@@ -16,7 +16,6 @@ brew install starship
 
 brew install --cask google-chrome
 brew install --cask firefox
-brew install --cask keka
 brew install --cask transmission
 brew install --cask tunnelblick
 brew install --cask slack
