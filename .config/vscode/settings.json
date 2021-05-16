@@ -16,7 +16,6 @@
   "editor.glyphMargin": false,
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
-  "editor.suggest.localityBonus": true,
   "editor.columnSelection": false,
   "breadcrumbs.enabled": false,
   "search.mode": "newEditor",
