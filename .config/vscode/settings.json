@@ -23,6 +23,7 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
   "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
   "workbench.activityBar.visible": false,
   "workbench.settings.editor": "json",
   "workbench.editor.labelFormat": "short",
