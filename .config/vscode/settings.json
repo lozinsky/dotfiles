@@ -25,6 +25,7 @@
   "explorer.autoReveal": false,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   "workbench.activityBar.visible": false,
   "workbench.settings.editor": "json",
   "workbench.editor.labelFormat": "short",
