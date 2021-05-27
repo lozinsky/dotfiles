@@ -2,7 +2,6 @@
 
 PACKAGES=(
   nodemon
-  parcel-bundler
   typescript
   prettier
   jest
