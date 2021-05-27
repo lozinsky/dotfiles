@@ -2,7 +2,6 @@
 
 PACKAGES=(
   nodemon
-  typescript
   prettier
   servor
 )
