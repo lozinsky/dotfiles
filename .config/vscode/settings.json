@@ -19,7 +19,7 @@
   "editor.columnSelection": false,
   "breadcrumbs.enabled": false,
   "search.mode": "newEditor",
-  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
   "explorer.autoReveal": false,
