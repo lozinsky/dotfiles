@@ -5,5 +5,6 @@ set -gx PATH "/opt/homebrew/bin" $PATH
 set -gx PATH "$GOPATH/bin" $PATH
 
 alias serve "servor --reload"
+alias stext "subl"
 
 starship init fish | source
