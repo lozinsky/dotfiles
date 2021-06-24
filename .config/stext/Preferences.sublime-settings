@@ -1,0 +1,19 @@
+{
+  "font_face": "Dank Mono",
+  "font_size": 14,
+  "tab_size": 2,
+  "caret_style": "smooth",
+  "drag_text": false,
+  "fold_buttons": false,
+  "line_numbers": false,
+  "draw_indent_guides": false,
+  "enable_tab_scrolling": false,
+  "show_tab_close_buttons": false,
+  "show_sidebar_button": false,
+  "theme": "Spacegray Eighties.sublime-theme",
+  "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+  "ignored_packages":
+  [
+    "Vintage",
+  ]
+}

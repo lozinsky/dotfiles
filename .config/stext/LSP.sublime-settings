@@ -1,0 +1,11 @@
+{
+  "show_view_status": false,
+  "show_diagnostics_panel_on_save": 0,
+  "clients":
+  {
+    "gopls":
+    {
+      "enabled": true,
+    },
+  },
+}
