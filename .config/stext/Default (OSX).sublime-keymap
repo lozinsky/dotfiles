@@ -1,9 +1,0 @@
-[
-  {
-    "keys":
-    [
-      "ctrl+`",
-    ],
-    "command": "terminus_open",
-  },
-]
