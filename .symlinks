@@ -20,22 +20,3 @@ ln -sf "$CONFIG/vscode/keybindings.json" "$APPLICATION_SUPPORT/Code/User/keybind
 read $'?To continue, you need to open Sublime Merge.app manually.\nPress RETURN if you are done.\n'
 
 ln -sf "$CONFIG/smerge/Preferences.sublime-settings" "$APPLICATION_SUPPORT/Sublime Merge/Packages/User/Preferences.sublime-settings"
-
-read $'?To continue, you need to open Sublime Text.app manually.\nPress RETURN if you are done.\n'
-
-ln -sf "$CONFIG/stext/Preferences.sublime-settings" "$APPLICATION_SUPPORT/Sublime Text/Packages/User/Preferences.sublime-settings"
-
-ln -sf "$CONFIG/stext/Package Control.sublime-settings" "$APPLICATION_SUPPORT/Sublime Text/Packages/User/Package Control.sublime-settings"
-
-ln -sf "$CONFIG/stext/LSP.sublime-settings" "$APPLICATION_SUPPORT/Sublime Text/Packages/User/LSP.sublime-settings"
-
-ln -sf "$CONFIG/stext/JsPrettier.sublime-settings" "$APPLICATION_SUPPORT/Sublime Text/Packages/User/JsPrettier.sublime-settings"
-
-ln -sf "$CONFIG/stext/Terminus.sublime-settings" "$APPLICATION_SUPPORT/Sublime Text/Packages/User/Terminus.sublime-settings"
-
-ln -sf "$CONFIG/stext/Default (OSX).sublime-keymap" "$APPLICATION_SUPPORT/Sublime Text/Packages/User/Default (OSX).sublime-keymap"
-
-ln -sf "$CONFIG/stext/Default (OSX).sublime-mousemap" "$APPLICATION_SUPPORT/Sublime Text/Packages/User/Default (OSX).sublime-mousemap"
-
-ln -sf "$CONFIG/stext/Go.sublime-settings" "$APPLICATION_SUPPORT/Sublime Text/Packages/User/Go.sublime-settings"
-
