@@ -1,5 +1,6 @@
 {
   "font_face": "Dank Mono",
+  "theme": "Merge Dark.sublime-theme",
   "hide_menu": true,
   "tab_size": 2,
   "editor_path": "/opt/homebrew/bin/code",
