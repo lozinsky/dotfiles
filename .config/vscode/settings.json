@@ -17,6 +17,7 @@
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.columnSelection": false,
+  "editor.suggestSelection": "first",
   "breadcrumbs.enabled": false,
   "search.mode": "newEditor",
   "terminal.integrated.fontSize": 14,
