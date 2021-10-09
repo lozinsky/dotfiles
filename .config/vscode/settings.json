@@ -42,8 +42,7 @@
   "window.title": "${activeEditorMedium} ${dirty}",
   "files.trimTrailingWhitespace": true,
   "files.defaultLanguage": "markdown",
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
+  "telemetry.telemetryLevel": "error",
   "go.lintTool": "golangci-lint",
   "go.lintFlags": ["--fast"],
   "[markdown]": {
