@@ -8,7 +8,7 @@ fi
 brew tap homebrew/cask
 
 brew install git
-brew install node
+brew install volta
 brew install mas
 brew install go
 brew install fish

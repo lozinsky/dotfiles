@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+volta setup
+
+volta install node
+
+volta install nodemon
+volta install prettier
+volta install servor

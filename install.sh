@@ -6,8 +6,8 @@ fi
 
 source "$DOTFILES/.command-line-tools"
 source "$DOTFILES/.brew"
+source "$DOTFILES/.volta"
 source "$DOTFILES/.mas"
-source "$DOTFILES/.npm"
 source "$DOTFILES/.vscode"
 source "$DOTFILES/.symlinks"
 source "$DOTFILES/.macos"

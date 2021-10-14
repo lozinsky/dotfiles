@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-PACKAGES=(
-  nodemon
-  prettier
-  servor
-)
-
-npm i -g "${PACKAGES[@]}"
