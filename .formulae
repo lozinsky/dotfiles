@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+should_brew_install() {
+  ! brew list | grep "$1" >/dev/null
+}
+
+should_volta_install() {
+  [[ -z "$(volta list $1 --format plain)" ]]
+}
+
+if should_brew_install git
+then
+  brew install git
+  ln -sf "$DOTFILES/.config/gitconfig" "$HOME/.gitconfig"
+fi
+
+if should_brew_install volta
+then
+  brew install volta
+  volta setup
+fi
+
+if should_brew_install mas
+then
+  brew install mas
+fi
+
+if should_brew_install go
+then
+  brew install go
+fi
+
+if should_volta_install node
+then
+  volta install node
+fi
+
+if should_volta_install nodemon
+then
+  volta install nodemon
+fi
+
+if should_volta_install prettier
+then
+  volta install prettier
+  ln -sf "$DOTFILES/.config/prettierrc" "$HOME/.prettierrc"
+fi
+
+if should_volta_install servor
+then
+  volta install servor
+fi

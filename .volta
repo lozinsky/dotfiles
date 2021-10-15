@@ -1,9 +1,0 @@
-#!/usr/bin/env fish
-
-volta setup
-
-volta install node
-
-volta install nodemon
-volta install prettier
-volta install servor

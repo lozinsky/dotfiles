@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-code --install-extension wmaurer.change-case
-code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension pawelgrzybek.gatito-theme
-code --install-extension esbenp.prettier-vscode
-code --install-extension jasonnutter.search-node-modules
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension golang.go
