@@ -4,11 +4,11 @@ if [ ! -n "$DOTFILES" ]; then
   DOTFILES="$HOME/.dotfiles"
 fi
 
-source "$DOTFILES/.command-line-tools"
-source "$DOTFILES/.brew"
-source "$DOTFILES/.volta"
-source "$DOTFILES/.mas"
-source "$DOTFILES/.vscode"
-source "$DOTFILES/.symlinks"
-source "$DOTFILES/.macos"
-source "$DOTFILES/.fish"
+$DOTFILES/.command-line-tools
+$DOTFILES/.brew
+$DOTFILES/.volta
+$DOTFILES/.mas
+$DOTFILES/.vscode
+$DOTFILES/.symlinks
+$DOTFILES/.macos
+$DOTFILES/.fish
