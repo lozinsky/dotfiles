@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
 
-COMPUTER_NAME="Pavel’s MacBook"
-LOCAL_HOST_NAME="honey"
+add_to_dock() {
+  defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>$1</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
+}
 
 osascript -e 'tell application "System Preferences" to quit'
-sudo -v
-
-# Sharing: set computer name
-sudo scutil --set LocalHostName "$LOCAL_HOST_NAME"
-sudo scutil --set ComputerName "$COMPUTER_NAME"
 
 # Dock: set the icon size
 defaults write com.apple.dock tilesize -int 40
@@ -24,6 +20,24 @@ defaults write com.apple.dock minimize-to-application -bool true
 
 # Dock: don’t show recent applications
 defaults write com.apple.dock show-recents -bool false
+
+# Dock: remove all apps
+defaults write com.apple.dock persistent-apps -array ""
+
+add_to_dock "/Applications/iTerm.app"
+add_to_dock "/Applications/Safari.app"
+add_to_dock "/System/Applications/Mail.app"
+add_to_dock "/Applications/Telegram.app"
+add_to_dock "/Applications/Visual Studio Code.app"
+add_to_dock "/Applications/Sublime Merge.app"
+add_to_dock "/Applications/Dash.app"
+add_to_dock "/Applications/Reeder.app"
+add_to_dock "/Applications/Obsidian.app"
+add_to_dock "/System/Applications/Calendar.app"
+add_to_dock "/System/Applications/Notes.app"
+add_to_dock "/System/Applications/Music.app"
+add_to_dock "/System/Applications/Podcasts.app"
+add_to_dock "/Applications/Bitwarden.app"
 
 # Dashboard: disable
 defaults write com.apple.dashboard mcx-disabled -bool true

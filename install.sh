@@ -1,9 +1,17 @@
 #!/usr/bin/env bash
 
+COMPUTER_NAME="Pavel’s MacBook"
+LOCAL_HOST_NAME="honey"
+
 if [ ! -n "$DOTFILES" ]
 then
   export DOTFILES="$HOME/.dotfiles"
 fi
+
+sudo -v
+
+sudo scutil --set LocalHostName "$LOCAL_HOST_NAME"
+sudo scutil --set ComputerName "$COMPUTER_NAME"
 
 if ! pkgutil --packages | grep CL >/dev/null
 then
@@ -39,8 +47,8 @@ then
   fish "$HOME/.config/fish/config.fish"
 fi
 
-"$DOTFILES/.macos"
 "$DOTFILES/.formulae"
 "$DOTFILES/.casks"
+"$DOTFILES/.macos"
 
 brew cleanup
