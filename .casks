@@ -17,11 +17,6 @@ then
   brew tap homebrew/cask
 fi
 
-if should_brew_install_cask google-chrome
-then
-  brew install --cask google-chrome
-fi
-
 if should_brew_install_cask firefox
 then
   brew install --cask firefox
