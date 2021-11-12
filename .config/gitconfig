@@ -2,8 +2,5 @@
   name = Pavel Lozinsky
   email = pavel@lozinsky.dev
 
-[github]
-  user = lozinsky
-
 [init]
   defaultBranch = main
