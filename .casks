@@ -22,11 +22,6 @@ then
   brew install --cask firefox
 fi
 
-if should_brew_install_cask transmission
-then
-  brew install --cask transmission
-fi
-
 if should_brew_install_cask tunnelblick
 then
   brew install --cask tunnelblick
