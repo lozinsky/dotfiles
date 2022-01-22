@@ -23,6 +23,7 @@ then
   asdf plugin add golang
   ln -sf "$DOTFILES/.config/tool-versions" "$HOME/.tool-versions"
   ln -sf "$DOTFILES/.config/default-npm-packages" "$HOME/.default-npm-packages"
+  ln -sf "$DOTFILES/.config/npmrc" "$HOME/.npmrc"
   ln -sf "$DOTFILES/.config/prettierrc" "$HOME/.prettierrc"
   asdf install
 fi
