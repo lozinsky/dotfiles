@@ -78,6 +78,20 @@ then
   brew install --cask obsidian
 fi
 
+if should_brew_install_cask maccy
+then
+  brew install --cask maccy
+  defaults write org.p0deje.Maccy KeyboardShortcuts_popup -string "{\"carbonModifiers\":768,\"carbonKeyCode\":9}"
+  defaults write org.p0deje.Maccy hideFooter -bool true
+  defaults write org.p0deje.Maccy hideTitle -bool true
+  defaults write org.p0deje.Maccy pasteByDefault -bool true
+  defaults write org.p0deje.Maccy supressClearAlert -bool true
+  defaults write org.p0deje.Maccy showInStatusBar -bool false
+  defaults write org.p0deje.Maccy popupPosition -string "center"
+  defaults write org.p0deje.Maccy historySize -int 10
+  defaults write org.p0deje.Maccy ignoredApps -array "com.bitwarden.desktop"
+fi
+
 # Reeder 5
 if should_mas_install 1529448980
 then
