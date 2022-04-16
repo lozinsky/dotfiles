@@ -49,22 +49,7 @@
   "[markdown]": {
     "editor.fontFamily": "Helvetica"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
+  "[javascript][typescript][typescriptreact][html][json][jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
