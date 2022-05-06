@@ -19,6 +19,7 @@
   "editor.columnSelection": false,
   "editor.suggestSelection": "first",
   "editor.suggest.preview": true,
+  "editor.bracketPairColorization.enabled": false,
   "breadcrumbs.enabled": false,
   "search.mode": "newEditor",
   "terminal.integrated.fontSize": 14,
