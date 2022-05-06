@@ -12,7 +12,7 @@
   "editor.folding": false,
   "editor.wordWrap": "on",
   "editor.lineNumbers": "off",
-  "editor.renderIndentGuides": false,
+  "editor.guides.indentation": false,
   "editor.glyphMargin": false,
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
