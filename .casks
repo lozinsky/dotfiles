@@ -41,6 +41,7 @@ then
   code --install-extension jasonnutter.search-node-modules
   code --install-extension dbaeumer.vscode-eslint
   code --install-extension golang.go
+  code --install-extension jakearl.handydandy-notebook
 fi
 
 if should_brew_install_cask sublime-merge

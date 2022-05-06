@@ -7,5 +7,9 @@
   {
     "key": "shift+cmd+i",
     "command": "workbench.action.tasks.runTask"
+  },
+  {
+    "key": "cmd+n",
+    "command": "handydandy-notebook.newNotebook"
   }
 ]
