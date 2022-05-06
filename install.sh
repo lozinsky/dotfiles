@@ -21,6 +21,7 @@ then
   fi
 
   xcode-select --install
+
   read -s -p "To continue, you need to wait while Command line tools will be installed. Press RETURN if you are done."; echo
 fi
 
@@ -33,6 +34,7 @@ fi
 if ! which starship >/dev/null
 then
   brew install starship
+
   mkdir -p "$HOME/.config"
   ln -sf "$DOTFILES/.config/starship.toml" "$HOME/.config/starship.toml"
 fi
@@ -40,6 +42,7 @@ fi
 if ! which fish >/dev/null
 then
   brew install fish
+
   echo "$(which fish)" | sudo tee -a /etc/shells >/dev/null
   chsh -s "$(which fish)"
   mkdir -p "$HOME/.config"

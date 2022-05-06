@@ -7,6 +7,7 @@ should_brew_install() {
 if should_brew_install git
 then
   brew install git
+
   ln -sf "$DOTFILES/.config/gitconfig" "$HOME/.gitconfig"
 fi
 
@@ -18,12 +19,16 @@ fi
 if should_brew_install asdf
 then
   brew install asdf
+
   fish "$(brew --prefix asdf)/libexec/asdf.fish"
+
   asdf plugin add nodejs
   asdf plugin add golang
+
   ln -sf "$DOTFILES/.config/tool-versions" "$HOME/.tool-versions"
   ln -sf "$DOTFILES/.config/default-npm-packages" "$HOME/.default-npm-packages"
   ln -sf "$DOTFILES/.config/npmrc" "$HOME/.npmrc"
   ln -sf "$DOTFILES/.config/prettierrc" "$HOME/.prettierrc"
+
   asdf install
 fi
