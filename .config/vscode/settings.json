@@ -41,6 +41,7 @@
   "workbench.tree.renderIndentGuides": "none",
   "workbench.statusBar.visible": false,
   "workbench.editor.wrapTabs": true,
+  "workbench.layoutControl.enabled": false,
   "window.title": "${activeEditorMedium} ${dirty}",
   "files.trimTrailingWhitespace": true,
   "files.defaultLanguage": "markdown",
