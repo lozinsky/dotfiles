@@ -10,6 +10,6 @@
   },
   {
     "key": "cmd+n",
-    "command": "handydandy-notebook.newNotebook"
+    "command": "node.notebook.newREPL"
   }
 ]
