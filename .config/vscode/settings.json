@@ -20,6 +20,9 @@
   "editor.suggestSelection": "first",
   "editor.suggest.preview": true,
   "editor.bracketPairColorization.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "breadcrumbs.enabled": false,
   "search.mode": "newEditor",
   "terminal.integrated.fontSize": 14,
