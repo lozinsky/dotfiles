@@ -9,7 +9,11 @@
     "command": "workbench.action.tasks.runTask"
   },
   {
+    "key": "shift+cmd+m",
+    "command": "quokka.selectWorkspaceFolder"
+  },
+  {
     "key": "cmd+n",
-    "command": "node.notebook.newREPL"
+    "command": "quokka.createJavaScriptFile"
   }
 ]

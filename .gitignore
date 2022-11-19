@@ -1,1 +1,4 @@
 .DS_Store
+
+.config/quokka/*
+!.config/quokka/config.json

@@ -50,6 +50,7 @@
   "telemetry.telemetryLevel": "error",
   "go.lintTool": "golangci-lint",
   "go.lintFlags": ["--fast"],
+  "quokka.showOutputOnStart": false,
   "[markdown]": {
     "editor.fontFamily": "Helvetica"
   },

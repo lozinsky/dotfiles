@@ -41,7 +41,10 @@ then
   code --install-extension jasonnutter.search-node-modules
   code --install-extension dbaeumer.vscode-eslint
   code --install-extension golang.go
-  code --install-extension donjayamanne.typescript-notebook
+
+  ln -sf "$DOTFILES/.config/quokka" "$HOME/.quokka"
+
+  code --install-extension WallabyJs.quokka-vscode
 fi
 
 if should_brew_install_cask sublime-merge
