@@ -20,6 +20,7 @@
   "editor.suggestSelection": "first",
   "editor.suggest.preview": true,
   "editor.bracketPairColorization.enabled": false,
+  "editor.linkedEditing": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -43,6 +44,9 @@
   "workbench.statusBar.visible": false,
   "workbench.editor.wrapTabs": true,
   "workbench.layoutControl.enabled": false,
+  "workbench.colorCustomizations": {
+    "editor.linkedEditingBackground": "#00000000"
+  },
   "window.title": "${activeEditorMedium} ${dirty}",
   "files.trimTrailingWhitespace": true,
   "files.defaultLanguage": "markdown",
