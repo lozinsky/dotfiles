@@ -33,7 +33,6 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.activityBar.visible": false,
   "workbench.settings.editor": "json",
-  "workbench.editor.labelFormat": "short",
   "workbench.colorTheme": "Gatito Theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.showIcons": false,
