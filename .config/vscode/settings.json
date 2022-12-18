@@ -24,6 +24,9 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "emmet.preferences": {
+    "profile.allowCompactBoolean": true
+  },
   "breadcrumbs.enabled": false,
   "search.mode": "newEditor",
   "terminal.integrated.fontSize": 14,
