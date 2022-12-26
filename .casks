@@ -41,6 +41,7 @@ then
   code --install-extension jasonnutter.search-node-modules
   code --install-extension dbaeumer.vscode-eslint
   code --install-extension golang.go
+  code --install-extension rust-lang.rust-analyzer
 
   ln -sf "$DOTFILES/.config/quokka" "$HOME/.quokka"
 

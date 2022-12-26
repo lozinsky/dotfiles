@@ -32,3 +32,10 @@ then
 
   asdf install
 fi
+
+if should_brew_install rustup-init
+then
+  brew install rustup-init
+
+  rustup-init -y --no-modify-path
+fi
