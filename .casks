@@ -17,6 +17,11 @@ then
   brew tap homebrew/cask
 fi
 
+if should_brew_install_cask arc
+then
+  brew install --cask arc
+fi
+
 if should_brew_install_cask firefox
 then
   brew install --cask firefox
