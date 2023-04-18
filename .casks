@@ -40,6 +40,7 @@ then
   code --install-extension esbenp.prettier-vscode
   code --install-extension jasonnutter.search-node-modules
   code --install-extension dbaeumer.vscode-eslint
+  code --install-extension yoavbls.pretty-ts-errors
   code --install-extension golang.go
   code --install-extension rust-lang.rust-analyzer
 
