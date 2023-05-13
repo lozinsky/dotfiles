@@ -36,6 +36,8 @@ if should_brew_install_cask visual-studio-code
 then
   brew install --cask visual-studio-code
 
+  read -s -p "To continue, you need to open Visual Studio Code.app manually. Press RETURN if you are done."; echo
+
   ln -sf "$DOTFILES/.config/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
   ln -sf "$DOTFILES/.config/vscode/keybindings.json" "$HOME/Library/Application Support/Code/User/keybindings.json"
 
