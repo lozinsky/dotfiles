@@ -9,6 +9,7 @@ then
   brew install git
 
   ln -sf "$DOTFILES/.config/gitconfig" "$HOME/.gitconfig"
+  ln -sf "$DOTFILES/.config/gitignore" "$HOME/.gitignore"
 fi
 
 if should_brew_install mas
