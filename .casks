@@ -50,6 +50,7 @@ then
   code --install-extension dbaeumer.vscode-eslint
   code --install-extension yoavbls.pretty-ts-errors
   code --install-extension Cardinal90.multi-cursor-case-preserve
+  code --install-extension GitHub.copilot
   code --install-extension golang.go
   code --install-extension rust-lang.rust-analyzer
 

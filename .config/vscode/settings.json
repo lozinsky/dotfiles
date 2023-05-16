@@ -19,6 +19,7 @@
   "editor.columnSelection": false,
   "editor.suggestSelection": "first",
   "editor.suggest.preview": true,
+  "editor.inlineSuggest.enabled": true,
   "editor.bracketPairColorization.enabled": false,
   "editor.linkedEditing": true,
   "editor.codeActionsOnSave": {
