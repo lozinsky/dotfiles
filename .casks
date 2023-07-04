@@ -51,6 +51,7 @@ then
   code --install-extension yoavbls.pretty-ts-errors
   code --install-extension Cardinal90.multi-cursor-case-preserve
   code --install-extension GitHub.copilot
+  code --install-extension GitHub.copilot-chat
   code --install-extension golang.go
   code --install-extension rust-lang.rust-analyzer
 
