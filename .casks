@@ -17,6 +17,11 @@ then
   brew tap homebrew/cask
 fi
 
+if should_brew_tap homebrew/cask-versions
+then
+  brew tap homebrew/cask-versions
+fi
+
 if should_brew_install_cask arc
 then
   brew install --cask arc
@@ -84,9 +89,9 @@ then
   brew install --cask bitwarden
 fi
 
-if should_brew_install_cask dash
+if should_brew_install_cask dash6
 then
-  brew install --cask dash
+  brew install --cask dash6
 fi
 
 if should_brew_install_cask obsidian
