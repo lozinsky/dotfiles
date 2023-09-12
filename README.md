@@ -15,11 +15,3 @@ Run the following command to start the installation
 ```sh
 ~/.dotfiles/install.sh
 ```
-
-## Setting up iTerm2
-
-1. Open iTerm2
-2. Select iTerm2 > Preferences
-3. Under the General tab, check the box labeled "Load preferences from a custom folder or URL:"
-4. Press "Browse" and point it to `~/.dotfiles/.config/iterm2`
-5. Restart iTerm2
