@@ -5,4 +5,5 @@
   "tab_size": 2,
   "editor_path": "/opt/homebrew/bin/code",
   "editor_argument_format": "-g ${file}:${line}:${col}",
+  "side_bar_layout": "tabs",
 }
