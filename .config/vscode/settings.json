@@ -52,6 +52,7 @@
     "editor.linkedEditingBackground": "#00000000"
   },
   "window.title": "${activeEditorMedium} ${dirty}",
+  "window.commandCenter": false,
   "files.trimTrailingWhitespace": true,
   "files.defaultLanguage": "markdown",
   "telemetry.telemetryLevel": "error",
