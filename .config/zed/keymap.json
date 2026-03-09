@@ -1,0 +1,19 @@
+[
+  {
+    "bindings": {
+      "cmd-shift-w": "project_panel::CollapseAllEntries",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-space": "editor::ShowCompletions",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-w": ["workspace::SendKeystrokes", "cmd-k cmd-right cmd-w"],
+    },
+  },
+]

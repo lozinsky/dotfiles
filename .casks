@@ -8,61 +8,29 @@ should_brew_install_cask() {
   ! brew list --cask | grep "$1" >/dev/null
 }
 
-should_mas_install() {
-  ! mas list | grep "$1" >/dev/null
-}
-
 if should_brew_tap homebrew/cask
 then
   brew tap homebrew/cask
 fi
 
-if should_brew_tap homebrew/cask-versions
+if should_brew_install_cask zed
 then
-  brew tap homebrew/cask-versions
-fi
+  brew install --cask zed
 
-if should_brew_install_cask arc
-then
-  brew install --cask arc
-fi
+  mkdir -p "$HOME/.config/zed"
 
-if should_brew_install_cask firefox
-then
-  brew install --cask firefox
-fi
+  ln -sf "$DOTFILES/.config/zed/settings.json" "$HOME/.config/zed/settings.json"
+  ln -sf "$DOTFILES/.config/zed/keymap.json" "$HOME/.config/zed/keymap.json"
+  ln -sf "$DOTFILES/.config/zed/tasks.json" "$HOME/.config/zed/tasks.json"
 
-if should_brew_install_cask tunnelblick
-then
-  brew install --cask tunnelblick
-fi
+  mkdir -p "$HOME/.config/zed/snippets"
 
-if should_brew_install_cask visual-studio-code
-then
-  brew install --cask visual-studio-code
+  ln -sf "$DOTFILES/.config/zed/snippets/javascript.json" "$HOME/.config/zed/snippets/javascript.json"
+  ln -sf "$DOTFILES/.config/zed/snippets/typescript.json" "$HOME/.config/zed/snippets/typescript.json"
 
-  read -s -p "To continue, you need to open Visual Studio Code.app manually. Press RETURN if you are done."; echo
+  mkdir -p "$HOME/.config/claude"
 
-  ln -sf "$DOTFILES/.config/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
-  ln -sf "$DOTFILES/.config/vscode/keybindings.json" "$HOME/Library/Application Support/Code/User/keybindings.json"
-
-  code --install-extension wmaurer.change-case
-  code --install-extension streetsidesoftware.code-spell-checker
-  code --install-extension pawelgrzybek.gatito-theme
-  code --install-extension esbenp.prettier-vscode
-  code --install-extension jasonnutter.search-node-modules
-  code --install-extension CodeQue.codeque
-  code --install-extension dbaeumer.vscode-eslint
-  code --install-extension yoavbls.pretty-ts-errors
-  code --install-extension Cardinal90.multi-cursor-case-preserve
-  code --install-extension GitHub.copilot
-  code --install-extension GitHub.copilot-chat
-  code --install-extension golang.go
-  code --install-extension rust-lang.rust-analyzer
-
-  ln -sf "$DOTFILES/.config/quokka" "$HOME/.quokka"
-
-  code --install-extension WallabyJs.quokka-vscode
+  ln -sf "$DOTFILES/.config/claude/settings.json" "$HOME/.claude/settings.json"
 fi
 
 if should_brew_install_cask sublime-merge
@@ -89,11 +57,6 @@ then
   brew install --cask bitwarden
 fi
 
-if should_brew_install_cask dash6
-then
-  brew install --cask dash6
-fi
-
 if should_brew_install_cask obsidian
 then
   brew install --cask obsidian
@@ -114,8 +77,19 @@ then
   defaults write org.p0deje.Maccy ignoredApps -array "com.bitwarden.desktop"
 fi
 
-# Reeder 5
-if should_mas_install 1529448980
+if should_brew_install_cask keyboardcleantool
 then
-  mas install 1529448980
+  brew install --cask keyboardcleantool
+fi
+
+if should_brew_install_cask ghostty
+then
+  brew install --cask ghostty
+
+  ln -sf "$DOTFILES/.config/ghostty" "$HOME/.config/ghostty"
+fi
+
+if should_brew_install_cask font-maple-mono
+then
+  brew install --cask font-maple-mono
 fi

@@ -1,0 +1,8 @@
+[
+  {
+    "label": "sublime merge: open",
+    "command": "smerge",
+    "args": ["."],
+    "hide": "on_success",
+  },
+]

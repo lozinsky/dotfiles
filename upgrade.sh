@@ -3,4 +3,4 @@
 brew upgrade
 brew cleanup
 
-mas upgrade
+skills update

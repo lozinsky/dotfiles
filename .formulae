@@ -1,8 +1,17 @@
 #!/usr/bin/env bash
 
+should_brew_tap() {
+  ! brew tap | grep "$1" >/dev/null
+}
+
 should_brew_install() {
   ! brew list | grep "$1" >/dev/null
 }
+
+if should_brew_tap homebrew/services
+then
+  brew tap homebrew/services
+fi
 
 if should_brew_install git
 then
@@ -12,19 +21,17 @@ then
   ln -sf "$DOTFILES/.config/gitignore" "$HOME/.gitignore"
 fi
 
-if should_brew_install mas
-then
-  brew install mas
-fi
-
 if should_brew_install asdf
 then
   brew install asdf
 
-  fish "$(brew --prefix asdf)/libexec/asdf.fish"
+  export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
   asdf plugin add nodejs
+  asdf plugin add deno
+  asdf plugin add bun
   asdf plugin add golang
+  asdf plugin add python
 
   ln -sf "$DOTFILES/.config/tool-versions" "$HOME/.tool-versions"
   ln -sf "$DOTFILES/.config/default-npm-packages" "$HOME/.default-npm-packages"
@@ -39,4 +46,20 @@ then
   brew install rustup-init
 
   rustup-init -y --no-modify-path
+fi
+
+if should_brew_install docker
+then
+  brew install docker
+fi
+
+if should_brew_install colima
+then
+  brew install colima
+  brew services start colima
+fi
+
+if should_brew_install mole
+then
+  brew install mole
 fi

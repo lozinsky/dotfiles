@@ -50,6 +50,8 @@ then
   fish "$HOME/.config/fish/config.fish"
 fi
 
+cp "$DOTFILES/.fonts/google-sans-flex/"*.ttf "$HOME/Library/Fonts/"
+
 "$DOTFILES/.formulae"
 "$DOTFILES/.casks"
 "$DOTFILES/.macos"

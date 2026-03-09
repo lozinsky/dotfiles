@@ -24,20 +24,14 @@ defaults write com.apple.dock show-recents -bool false
 # Dock: remove all apps
 defaults write com.apple.dock persistent-apps -array ""
 
-add_to_dock "/Applications/iTerm.app"
-add_to_dock "/Applications/Arc.app"
+add_to_dock "/Applications/Ghostty.app"
+add_to_dock "/Applications/Google Chrome.app"
 add_to_dock "/System/Applications/Mail.app"
 add_to_dock "/Applications/Telegram.app"
-add_to_dock "/Applications/Visual Studio Code.app"
+add_to_dock "/Applications/Zed.app"
 add_to_dock "/Applications/Sublime Merge.app"
-add_to_dock "/Applications/Dash.app"
-add_to_dock "/Applications/Reeder.app"
 add_to_dock "/Applications/Obsidian.app"
-add_to_dock "/System/Applications/Calendar.app"
-add_to_dock "/System/Applications/Notes.app"
-add_to_dock "/System/Applications/Music.app"
-add_to_dock "/System/Applications/Podcasts.app"
-add_to_dock "/Applications/Bitwarden.app"
+add_to_dock "/System/Applications/Music.App"
 
 # Dashboard: disable
 defaults write com.apple.dashboard mcx-disabled -bool true
