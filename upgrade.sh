@@ -3,4 +3,6 @@
 brew upgrade
 brew cleanup
 
+npm update -g
+
 skills update
