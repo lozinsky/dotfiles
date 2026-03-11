@@ -1,4 +1,5 @@
 {
+  "diff_view_style": "unified",
   "use_system_window_tabs": true,
   "snippet_sort_order": "top",
   "auto_install_extensions": {
