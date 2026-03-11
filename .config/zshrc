@@ -1,9 +1,5 @@
 alias serve="servor --reload"
 
-get_app_id() {
-  osascript -e "id of app \"$1\""
-}
-
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
