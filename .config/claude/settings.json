@@ -15,7 +15,6 @@
       "Bash(rm -rf *)",
       "Bash(rm -fr *)",
       "Bash(bash *)",
-      "Bash(fish *)",
       "Bash(node *)",
       "Bash(python3 *)",
       "Bash(git *)",

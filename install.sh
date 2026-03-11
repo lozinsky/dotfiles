@@ -13,6 +13,11 @@ sudo -v
 sudo scutil --set LocalHostName "$LOCAL_HOST_NAME"
 sudo scutil --set ComputerName "$COMPUTER_NAME"
 
+ln -sf "$DOTFILES/.config/zshenv" "$HOME/.zshenv"
+ln -sf "$DOTFILES/.config/zshrc" "$HOME/.zshrc"
+
+source "$HOME/.zshenv"
+
 if ! pkgutil --packages | grep CL >/dev/null
 then
   if xcode-select --print-path &>/dev/null
@@ -28,7 +33,6 @@ fi
 if ! which brew >/dev/null
 then
   bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  PATH="/opt/homebrew/bin:$PATH"
 fi
 
 if ! which starship >/dev/null
@@ -36,18 +40,8 @@ then
   brew install starship
 
   mkdir -p "$HOME/.config"
+
   ln -sf "$DOTFILES/.config/starship.toml" "$HOME/.config/starship.toml"
-fi
-
-if ! which fish >/dev/null
-then
-  brew install fish
-
-  echo "$(which fish)" | sudo tee -a /etc/shells >/dev/null
-  chsh -s "$(which fish)"
-  mkdir -p "$HOME/.config"
-  ln -sf "$DOTFILES/.config/fish" "$HOME/.config"
-  fish "$HOME/.config/fish/config.fish"
 fi
 
 cp "$DOTFILES/.fonts/google-sans-flex/"*.ttf "$HOME/Library/Fonts/"

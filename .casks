@@ -86,6 +86,8 @@ if should_brew_install_cask ghostty
 then
   brew install --cask ghostty
 
+  mkdir -p "$HOME/.config"
+
   ln -sf "$DOTFILES/.config/ghostty" "$HOME/.config/ghostty"
 fi
 

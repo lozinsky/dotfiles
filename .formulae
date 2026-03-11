@@ -13,6 +13,16 @@ then
   brew tap homebrew/services
 fi
 
+if should_brew_install zsh-autosuggestions
+then
+  brew install zsh-autosuggestions
+fi
+
+if should_brew_install zsh-syntax-highlighting
+then
+  brew install zsh-syntax-highlighting
+fi
+
 if should_brew_install git
 then
   brew install git
@@ -24,8 +34,6 @@ fi
 if should_brew_install asdf
 then
   brew install asdf
-
-  export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
   asdf plugin add nodejs
   asdf plugin add deno

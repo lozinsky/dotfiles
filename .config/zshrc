@@ -1,0 +1,12 @@
+alias serve="servor --reload"
+
+get_app_id() {
+  osascript -e "id of app \"$1\""
+}
+
+autoload -Uz compinit && compinit
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval "$(starship init zsh)"
