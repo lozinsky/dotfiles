@@ -1,4 +1,7 @@
 {
+  "file_finder": {
+    "file_icons": false,
+  },
   "agent_servers": {
     "claude-acp": {
       "type": "registry",
