@@ -13,6 +13,15 @@ then
   brew tap homebrew/services
 fi
 
+if should_brew_install starship
+then
+  brew install starship
+
+  mkdir -p "$HOME/.config"
+
+  ln -sf "$DOTFILES/.config/starship.toml" "$HOME/.config/starship.toml"
+fi
+
 if should_brew_install zsh-autosuggestions
 then
   brew install zsh-autosuggestions

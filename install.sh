@@ -35,15 +35,6 @@ then
   bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-if ! which starship >/dev/null
-then
-  brew install starship
-
-  mkdir -p "$HOME/.config"
-
-  ln -sf "$DOTFILES/.config/starship.toml" "$HOME/.config/starship.toml"
-fi
-
 cp "$DOTFILES/.fonts/google-sans-flex/"*.ttf "$HOME/Library/Fonts/"
 
 "$DOTFILES/.formulae"
