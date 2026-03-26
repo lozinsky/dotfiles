@@ -86,3 +86,8 @@ if should_brew_install_cask font-maple-mono
 then
   brew install --cask font-maple-mono
 fi
+
+if should_brew_install_cask google-chrome
+then
+  brew install --cask google-chrome
+fi
