@@ -48,22 +48,6 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Finder: when performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
-# Safari: enable the develop menu and the web inspector
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-
-# Safari: don’t send search queries to apple
-defaults write com.apple.Safari UniversalSearchEnabled -bool false
-defaults write com.apple.Safari SuppressSearchSuggestions -bool true
-
-# Safari: show the full URL in the address bar
-defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
-
-# Safari: set home page to `about:blank` for faster loading
-defaults write com.apple.Safari HomePage -string "about:blank"
-
-# Safari: prevent from opening safe files automatically after downloading
-defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
-
 for app in Dock Finder Safari
 do
   killall "$app" > /dev/null 2>&1
