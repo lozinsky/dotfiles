@@ -1,5 +1,6 @@
 export DOTFILES="$HOME/.dotfiles"
 export GOPATH="$HOME/.go"
+export DENO_NO_UPDATE_CHECK="1"
 
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
