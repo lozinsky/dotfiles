@@ -1,17 +1,8 @@
 #!/usr/bin/env bash
 
-should_brew_tap() {
-  ! brew tap | grep "$1" >/dev/null
-}
-
 should_brew_install_cask() {
   ! brew list --cask | grep "$1" >/dev/null
 }
-
-if should_brew_tap homebrew/cask
-then
-  brew tap homebrew/cask
-fi
 
 if should_brew_install_cask zed
 then
