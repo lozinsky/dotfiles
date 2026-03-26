@@ -1,17 +1,8 @@
 #!/usr/bin/env bash
 
-should_brew_tap() {
-  ! brew tap | grep "$1" >/dev/null
-}
-
 should_brew_install() {
   ! brew list | grep "$1" >/dev/null
 }
-
-if should_brew_tap homebrew/services
-then
-  brew tap homebrew/services
-fi
 
 if should_brew_install starship
 then
