@@ -28,7 +28,7 @@ then
   ln -sf "$DOTFILES/.config/zed/snippets/javascript.json" "$HOME/.config/zed/snippets/javascript.json"
   ln -sf "$DOTFILES/.config/zed/snippets/typescript.json" "$HOME/.config/zed/snippets/typescript.json"
 
-  mkdir -p "$HOME/.config/claude"
+  mkdir -p "$HOME/.claude"
 
   ln -sf "$DOTFILES/.config/claude/settings.json" "$HOME/.claude/settings.json"
 fi
