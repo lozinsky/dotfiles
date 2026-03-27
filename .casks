@@ -91,3 +91,8 @@ if should_brew_install_cask google-chrome
 then
   brew install --cask google-chrome
 fi
+
+if should_brew_install_cask chatgpt
+then
+  brew install --cask chatgpt
+fi
