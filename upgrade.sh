@@ -5,4 +5,6 @@ brew cleanup
 
 npm update -g
 
+mise upgrade
+
 skills update
