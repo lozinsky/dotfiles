@@ -13,6 +13,7 @@ sudo -v
 sudo scutil --set LocalHostName "$LOCAL_HOST_NAME"
 sudo scutil --set ComputerName "$COMPUTER_NAME"
 
+ln -sf "$DOTFILES/.config/zprofile" "$HOME/.zprofile"
 ln -sf "$DOTFILES/.config/zshenv" "$HOME/.zshenv"
 ln -sf "$DOTFILES/.config/zshrc" "$HOME/.zshrc"
 

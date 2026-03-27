@@ -31,22 +31,18 @@ then
   ln -sf "$DOTFILES/.config/gitignore" "$HOME/.gitignore"
 fi
 
-if should_brew_install asdf
+if should_brew_install mise
 then
-  brew install asdf
+  brew install mise
 
-  asdf plugin add nodejs
-  asdf plugin add deno
-  asdf plugin add bun
-  asdf plugin add golang
-  asdf plugin add python
+  mkdir -p "$HOME/.config/mise"
 
-  ln -sf "$DOTFILES/.config/tool-versions" "$HOME/.tool-versions"
+  ln -sf "$DOTFILES/.config/mise/config.toml" "$HOME/.config/mise/config.toml"
   ln -sf "$DOTFILES/.config/default-npm-packages" "$HOME/.default-npm-packages"
   ln -sf "$DOTFILES/.config/npmrc" "$HOME/.npmrc"
   ln -sf "$DOTFILES/.config/prettierrc" "$HOME/.prettierrc"
 
-  asdf install
+  mise -y install
 fi
 
 if should_brew_install rustup-init
