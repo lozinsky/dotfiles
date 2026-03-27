@@ -40,7 +40,7 @@ then
   ln -sf "$DOTFILES/.config/mise/config.toml" "$HOME/.config/mise/config.toml"
   ln -sf "$DOTFILES/.config/default-npm-packages" "$HOME/.default-npm-packages"
   ln -sf "$DOTFILES/.config/npmrc" "$HOME/.npmrc"
-  ln -sf "$DOTFILES/.config/prettierrc" "$HOME/.prettierrc"
+  ln -sf "$DOTFILES/.config/oxfmtrc.json" "$HOME/.oxfmtrc.json"
 
   mise -y install
 fi
