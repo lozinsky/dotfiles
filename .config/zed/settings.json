@@ -39,6 +39,26 @@
       "command": "chrome-devtools-mcp",
       "args": ["--no-usage-statistics", "--auto-connect"],
     },
+    "context7": {
+      "command": "keychain-exec",
+      "args": [
+        "mcp.context7.api-key",
+        "mcp-remote",
+        "https://mcp.context7.com/mcp",
+        "--header",
+        "CONTEXT7_API_KEY: {}",
+      ],
+    },
+    "github": {
+      "command": "keychain-exec",
+      "args": [
+        "mcp.github.personal-access-token",
+        "mcp-remote",
+        "https://api.githubcopilot.com/mcp/readonly",
+        "--header",
+        "Authorization: Bearer {}",
+      ],
+    },
   },
   "collaboration_panel": {
     "button": false,
