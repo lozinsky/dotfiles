@@ -40,7 +40,7 @@
       "args": ["--no-usage-statistics", "--auto-connect"],
     },
     "context7": {
-      "command": "keychain-exec",
+      "command": "mcp-keychain",
       "args": [
         "mcp.context7.api-key",
         "mcp-remote",
@@ -50,7 +50,7 @@
       ],
     },
     "github": {
-      "command": "keychain-exec",
+      "command": "mcp-keychain",
       "args": [
         "mcp.github.personal-access-token",
         "mcp-remote",
