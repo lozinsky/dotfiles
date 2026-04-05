@@ -67,3 +67,9 @@ if should_brew_install mole
 then
   brew install mole
 fi
+
+if should_brew_install ollama
+then
+  brew install ollama
+  brew services start ollama
+fi
