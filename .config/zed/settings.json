@@ -25,6 +25,7 @@
     "mode": "subtle",
   },
   "agent": {
+    "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5",
