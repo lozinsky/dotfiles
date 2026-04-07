@@ -3,7 +3,7 @@
 brew upgrade
 brew cleanup
 
-npm update -g
+npm update -g --min-release-age 2
 
 mise upgrade
 
