@@ -8,6 +8,10 @@
       "command": "copilot",
       "args": ["--acp", "--stdio"]
     },
+    "claude-acp": {
+      "type": "custom",
+      "command": "claude-agent-acp"
+    },
   },
   "diff_view_style": "unified",
   "use_system_window_tabs": true,
