@@ -6,6 +6,12 @@ add_to_dock() {
 
 osascript -e 'tell application "System Preferences" to quit'
 
+# Keyboard: set a key repeat rate
+defaults write -g KeyRepeat -int 2
+
+# Keyboard: set a delay until repeat
+defaults write -g InitialKeyRepeat -int 15
+
 # Dock: set the icon size
 defaults write com.apple.dock tilesize -int 40
 
