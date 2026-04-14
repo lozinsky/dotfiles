@@ -1,7 +1,10 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
     "allow": [
       "WebSearch",
+      "mcp__github__*",
+      "mcp__context7__*",
       "Bash(grep *)"
     ],
     "deny": [
@@ -12,6 +15,7 @@
       "Read(.env)"
     ],
     "ask": [
+      "Bash(curl *)",
       "Bash(rm -rf *)",
       "Bash(rm -fr *)",
       "Bash(bash *)",
