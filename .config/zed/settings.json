@@ -124,9 +124,6 @@
   "minimap": {
     "show": "never",
   },
-  "notification_panel": {
-    "button": false,
-  },
   "project_panel": {
     "auto_fold_dirs": false,
     "entry_spacing": "standard",
