@@ -87,9 +87,9 @@ then
   brew install --cask font-maple-mono
 fi
 
-if should_brew_install_cask google-chrome
+if should_brew_install_cask helium-browser
 then
-  brew install --cask google-chrome
+  brew install --cask helium-browser
 fi
 
 if should_brew_install_cask chatgpt
