@@ -45,13 +45,6 @@ then
   mise -y install
 fi
 
-if should_brew_install rustup-init
-then
-  brew install rustup-init
-
-  rustup-init -y --no-modify-path
-fi
-
 if should_brew_install docker
 then
   brew install docker
