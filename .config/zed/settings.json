@@ -21,6 +21,7 @@
   "snippet_sort_order": "top",
   "auto_install_extensions": {
     "oxc": true,
+    "zig": true,
     "html": true,
     "toml": true,
     "emmet": true,
