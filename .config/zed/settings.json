@@ -93,7 +93,6 @@
   },
   "git_panel": {
     "dock": "right",
-    "button": false,
   },
   "gutter": {
     "breakpoints": false,
