@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ $# -ne 2 ]]; then
+  echo "Usage: $(basename "$0") <source-worktree> <target-worktree>" >&2
+  exit 1
+fi
+
+source_worktree="$1"
+target_worktree="$2"
+
+if [[ ! -d "$source_worktree" ]]; then
+  echo "Error: source worktree does not exist: $source_worktree" >&2
+  exit 1
+fi
+
+if [[ ! -d "$target_worktree" ]]; then
+  echo "Error: target worktree does not exist: $target_worktree" >&2
+  exit 1
+fi
+
+source_worktree="$(cd "$source_worktree" && pwd)"
+target_worktree="$(cd "$target_worktree" && pwd)"
+
+while IFS= read -r -d '' include_file; do
+  include_dir="$(dirname "$include_file")"
+  rel_dir="${include_dir#"$source_worktree"}"
+  rel_dir="${rel_dir#/}"
+
+  while IFS= read -r -d '' rel_path; do
+    src="$include_dir/$rel_path"
+
+    if [[ ! -e "$src" ]]; then
+      continue
+    fi
+
+    if [[ -n "$rel_dir" ]]; then
+      dst="$target_worktree/$rel_dir/$rel_path"
+    else
+      dst="$target_worktree/$rel_path"
+    fi
+
+    mkdir -p "$(dirname "$dst")"
+    cp -R "$src" "$dst"
+  done < <(git -C "$include_dir" ls-files -z --others --ignored --exclude-from="$include_file")
+done < <(find "$source_worktree" -name .git -prune -o -type f -name .worktreeinclude -print0)
