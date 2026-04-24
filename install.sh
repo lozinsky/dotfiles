@@ -17,6 +17,7 @@ ln -sf "$DOTFILES/.config/zprofile" "$HOME/.zprofile"
 ln -sf "$DOTFILES/.config/zshenv" "$HOME/.zshenv"
 ln -sf "$DOTFILES/.config/zshrc" "$HOME/.zshrc"
 
+source "$HOME/.zprofile"
 source "$HOME/.zshenv"
 
 if ! pkgutil --packages | grep CL >/dev/null
