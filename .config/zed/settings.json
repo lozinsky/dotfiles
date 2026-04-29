@@ -6,11 +6,6 @@
     "file_icons": false,
   },
   "agent_servers": {
-    "github-copilot-cli": {
-      "type": "custom",
-      "command": "copilot",
-      "args": ["--acp", "--stdio"]
-    },
     "claude-acp": {
       "type": "custom",
       "command": "claude-agent-acp"
@@ -30,18 +25,10 @@
     "golangci-lint": true,
   },
   "edit_predictions": {
-    "provider": "copilot",
-    "mode": "subtle",
+    "provider": "none",
   },
   "agent": {
     "dock": "left",
-    "default_profile": "ask",
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5",
-    },
-    "favorite_models": [],
-    "model_parameters": [],
   },
   "context_servers": {
     "playwright": {
