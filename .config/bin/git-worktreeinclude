@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
+log() {
+  printf '%s\n' "$*" >&2
+}
+
 if [[ $# -ne 2 ]]; then
   echo "Usage: $(basename "$0") <source-worktree> <target-worktree>" >&2
   exit 1
@@ -23,25 +27,42 @@ fi
 source_worktree="$(cd "$source_worktree" && pwd)"
 target_worktree="$(cd "$target_worktree" && pwd)"
 
+log "$source_worktree -> $target_worktree"
+
+include_count=0
+copied_count=0
+
 while IFS= read -r -d '' include_file; do
+  include_count=$((include_count + 1))
   include_dir="$(dirname "$include_file")"
   rel_dir="${include_dir#"$source_worktree"}"
   rel_dir="${rel_dir#/}"
 
+  log "found: ${include_file#"$source_worktree/"}"
+
+  files=()
   while IFS= read -r -d '' rel_path; do
-    src="$include_dir/$rel_path"
-
-    if [[ ! -e "$src" ]]; then
-      continue
-    fi
-
-    if [[ -n "$rel_dir" ]]; then
-      dst="$target_worktree/$rel_dir/$rel_path"
-    else
-      dst="$target_worktree/$rel_path"
-    fi
-
-    mkdir -p "$(dirname "$dst")"
-    cp -R "$src" "$dst"
+    files+=("$rel_path")
   done < <(git -C "$include_dir" ls-files -z --others --ignored --exclude-from="$include_file")
+
+  if (( ${#files[@]} == 0 )); then
+    log "  (no matching files)"
+    continue
+  fi
+
+  if [[ -n "$rel_dir" ]]; then
+    dst_dir="$target_worktree/$rel_dir"
+  else
+    dst_dir="$target_worktree"
+  fi
+  mkdir -p "$dst_dir"
+
+  printf '%s\0' "${files[@]}" \
+    | tar --null -T - -cf - -C "$include_dir" \
+    | tar -xf - -C "$dst_dir"
+
+  copied_count=$((copied_count + ${#files[@]}))
+  log "  copied: ${#files[@]} file(s)"
 done < <(find "$source_worktree" -name .git -prune -o -type f -name .worktreeinclude -print0)
+
+log "done: $include_count .worktreeinclude file(s), $copied_count file(s) copied"
