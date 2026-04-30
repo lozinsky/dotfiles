@@ -1,6 +1,6 @@
 {
   "outline_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "file_finder": {
     "file_icons": false,
@@ -8,7 +8,7 @@
   "agent_servers": {
     "claude-acp": {
       "type": "custom",
-      "command": "claude-agent-acp"
+      "command": "claude-agent-acp",
     },
   },
   "diff_view_style": "unified",
@@ -83,6 +83,7 @@
   },
   "gutter": {
     "breakpoints": false,
+    "bookmarks": false,
     "runnables": false,
   },
   "indent_guides": {
