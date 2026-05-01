@@ -16,4 +16,16 @@
       "cmd-w": ["workspace::SendKeystrokes", "cmd-k cmd-right cmd-w"],
     },
   },
+  {
+    "context": "Pane",
+    "bindings": {
+      "cmd-shift-f": "workspace::NewSearch",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-f": "workspace::NewSearch",
+    },
+  },
 ]
