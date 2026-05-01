@@ -8,6 +8,7 @@
     "context": "Editor",
     "bindings": {
       "alt-space": "editor::ShowCompletions",
+      "cmd-shift-c": "editor::CopyFileName",
     },
   },
   {
