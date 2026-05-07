@@ -75,3 +75,8 @@ then
   brew install ollama
   brew services start ollama
 fi
+
+if should_brew_install webp
+then
+  brew install webp
+fi
