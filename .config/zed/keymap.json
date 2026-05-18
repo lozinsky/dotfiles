@@ -1,6 +1,11 @@
 [
   {
     "bindings": {
+      "cmd-shift-w": null,
+    },
+  },
+  {
+    "bindings": {
       "cmd-shift-w": "project_panel::CollapseAllEntries",
     },
   },
