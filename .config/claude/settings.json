@@ -1,5 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "DISABLE_AUTOUPDATER": "1"
+  },
   "permissions": {
     "allow": [
       "WebSearch",
@@ -24,5 +27,10 @@
       "Bash(git *)",
       "Bash(docker *)"
     ]
-  }
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  },
+  "theme": "dark-ansi",
+  "preferredNotifChannel": "terminal_bell"
 }

@@ -18,10 +18,6 @@ then
 
   ln -sf "$DOTFILES/.config/zed/snippets/javascript.json" "$HOME/.config/zed/snippets/javascript.json"
   ln -sf "$DOTFILES/.config/zed/snippets/typescript.json" "$HOME/.config/zed/snippets/typescript.json"
-
-  mkdir -p "$HOME/.claude"
-
-  ln -sf "$DOTFILES/.config/claude/settings.json" "$HOME/.claude/settings.json"
 fi
 
 if should_brew_install_cask sublime-merge
@@ -90,4 +86,20 @@ fi
 if should_brew_install_cask helium-browser
 then
   brew install --cask helium-browser
+fi
+
+if should_brew_install_cask claude-code
+then
+  brew install --cask claude-code
+
+  mkdir -p "$HOME/.claude"
+
+  ln -sf "$DOTFILES/.config/claude/settings.json" "$HOME/.claude/settings.json"
+
+  claude plugin install superpowers
+
+  claude mcp add --scope user playwright -- playwright-mcp --cdp-endpoint http://localhost:9222
+  claude mcp add --scope user chrome-devtools -- chrome-devtools-mcp --no-usage-statistics --auto-connect
+  claude mcp add --scope user context7 -- mcp-keychain mcp.context7.api-key mcp-remote https://mcp.context7.com/mcp --header "CONTEXT7_API_KEY: {}"
+  claude mcp add --scope user github -- mcp-keychain mcp.github.personal-access-token mcp-remote https://api.githubcopilot.com/mcp/readonly --header "Authorization: Bearer {}"
 fi
