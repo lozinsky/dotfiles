@@ -6,5 +6,4 @@ mcp-remote
 @playwright/mcp
 chrome-devtools-mcp
 skills
-@agentclientprotocol/claude-agent-acp
 svgo
