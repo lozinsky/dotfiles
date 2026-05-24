@@ -1,6 +1,7 @@
 printf '\33c\e[3J'
 
 alias serve="servor --reload"
+alias npm="sfw npm"
 
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
