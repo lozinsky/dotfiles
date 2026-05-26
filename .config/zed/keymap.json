@@ -2,6 +2,7 @@
   {
     "bindings": {
       "cmd-shift-w": null,
+      "cmd-w": null,
     },
   },
   {
@@ -14,12 +15,13 @@
     "bindings": {
       "alt-space": "editor::ShowCompletions",
       "cmd-shift-c": "editor::CopyFileName",
+      "cmd-w": ["pane::CloseActiveItem", { "close_pinned": false }],
     },
   },
   {
-    "context": "ProjectPanel",
+    "context": "Terminal",
     "bindings": {
-      "cmd-w": ["workspace::SendKeystrokes", "cmd-k cmd-right cmd-w"],
+      "cmd-w": ["pane::CloseActiveItem", { "close_pinned": false }],
     },
   },
   {
