@@ -1,17 +1,44 @@
 #!/usr/bin/env bash
 
-SERVICE="$1"
-CMD="$2"
+services=()
 
-shift 2
+while [[ "$1" != "--" ]]
+do
+  if [[ $# -eq 0 ]]
+  then
+    echo "Error: missing '--' separator." >&2
+    exit 1
+  fi
 
-SECRET=$(security find-generic-password -s "$SERVICE" -a "$USER" -w 2>/dev/null)
+  services+=("$1")
+  shift
+done
+shift
 
-if [ -z "$SECRET" ]
-then
-  echo "Error: secret '$SERVICE' not found in Keychain." >&2
-  echo "Add it with: security add-generic-password -s \"$SERVICE\" -a \"\$USER\" -w" >&2
-  exit 1
-fi
+secrets=()
 
-exec "$CMD" "${@//\{\}/$SECRET}"
+for service in "${services[@]}"
+do
+  secret=$(security find-generic-password -s "$service" -a "$USER" -w 2>/dev/null)
+
+  if [ -z "$secret" ]
+  then
+    echo "Error: secret '$service' not found in Keychain." >&2
+    echo "Add it with: security add-generic-password -s \"$service\" -a \"\$USER\" -w" >&2
+    exit 1
+  fi
+
+  secrets+=("$secret")
+done
+
+args=("$@")
+
+for i in "${!args[@]}"
+do
+  for j in "${!secrets[@]}"
+  do
+    args[$i]="${args[$i]//\{$((j+1))\}/${secrets[$j]}}"
+  done
+done
+
+exec "${args[@]}"

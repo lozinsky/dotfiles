@@ -100,6 +100,7 @@ then
 
   claude mcp add --scope user playwright -- playwright-mcp --cdp-endpoint http://localhost:9222
   claude mcp add --scope user chrome-devtools -- chrome-devtools-mcp --no-usage-statistics --auto-connect
-  claude mcp add --scope user context7 -- mcp-keychain mcp.context7.api-key mcp-remote https://mcp.context7.com/mcp --header "CONTEXT7_API_KEY: {}"
-  claude mcp add --scope user github -- mcp-keychain mcp.github.personal-access-token mcp-remote https://api.githubcopilot.com/mcp/readonly --header "Authorization: Bearer {}"
+  claude mcp add --scope user context7 -- mcp-keychain mcp.context7.api-key -- mcp-remote https://mcp.context7.com/mcp --header "CONTEXT7_API_KEY: {1}"
+  claude mcp add --scope user github -- mcp-keychain mcp.github.personal-access-token -- mcp-remote https://api.githubcopilot.com/mcp/readonly --header "Authorization: Bearer {1}"
+  claude mcp add --scope user bybit -- mcp-keychain mcp.bybit.api-key mcp.bybit.api-secret -- env BYBIT_API_KEY={1} BYBIT_API_SECRET={2} bybit-official-trading-server
 fi
