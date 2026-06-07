@@ -32,5 +32,6 @@
     "superpowers@claude-plugins-official": true
   },
   "theme": "dark-ansi",
-  "preferredNotifChannel": "terminal_bell"
+  "preferredNotifChannel": "terminal_bell",
+  "model": "opus"
 }
