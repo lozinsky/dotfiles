@@ -4,12 +4,6 @@
     "DISABLE_AUTOUPDATER": "1"
   },
   "permissions": {
-    "allow": [
-      "WebSearch",
-      "mcp__github__*",
-      "mcp__context7__*",
-      "Bash(grep *)"
-    ],
     "deny": [
       "Bash(sudo *)",
       "Bash(chmod 777 *)",
@@ -19,19 +13,29 @@
     ],
     "ask": [
       "Bash(curl *)",
-      "Bash(rm -rf *)",
-      "Bash(rm -fr *)",
+      "Bash(rm *)",
       "Bash(bash *)",
       "Bash(node *)",
       "Bash(python3 *)",
       "Bash(git *)",
-      "Bash(docker *)"
-    ]
+      "Bash(docker *)",
+      "Bash(brew *)",
+      "Bash(npm *)",
+      "Bash(pnpm *)",
+      "Bash(bun *)",
+      "Bash(pip *)",
+      "Bash(pip3 *)",
+      "Bash(cargo *)",
+      "Bash(rustup *)",
+      "Bash(asdf *)"
+    ],
+    "defaultMode": "auto"
   },
   "enabledPlugins": {
     "superpowers@claude-plugins-official": true
   },
   "theme": "dark-ansi",
   "preferredNotifChannel": "terminal_bell",
+  "skipAutoPermissionPrompt": true,
   "model": "opus"
 }
