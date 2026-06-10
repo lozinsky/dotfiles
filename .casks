@@ -88,9 +88,9 @@ then
   brew install --cask helium-browser
 fi
 
-if should_brew_install_cask claude-code
+if should_brew_install_cask claude-code@latest
 then
-  brew install --cask claude-code
+  brew install --cask claude-code@latest
 
   mkdir -p "$HOME/.claude"
 
