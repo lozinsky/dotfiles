@@ -5,6 +5,7 @@ npm-check-updates
 mcp-remote
 @playwright/mcp
 chrome-devtools-mcp
+@agentclientprotocol/claude-agent-acp
 svgo
 sfw
 bybit-official-trading-server

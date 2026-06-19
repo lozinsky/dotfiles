@@ -6,6 +6,12 @@
   "file_finder": {
     "file_icons": false,
   },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "custom",
+      "command": "claude-agent-acp",
+    },
+  },
   "diff_view_style": "unified",
   "use_system_window_tabs": true,
   "snippet_sort_order": "top",
@@ -24,6 +30,50 @@
   },
   "agent": {
     "dock": "left",
+  },
+  "context_servers": {
+    "playwright": {
+      "command": "playwright-mcp",
+      "args": ["--cdp-endpoint", "http://localhost:9222"],
+    },
+    "chrome-devtools": {
+      "command": "chrome-devtools-mcp",
+      "args": ["--no-usage-statistics", "--auto-connect"],
+    },
+    "context7": {
+      "command": "mcp-keychain",
+      "args": [
+        "mcp.context7.api-key",
+        "--",
+        "mcp-remote",
+        "https://mcp.context7.com/mcp",
+        "--header",
+        "CONTEXT7_API_KEY: {1}",
+      ],
+    },
+    "github": {
+      "command": "mcp-keychain",
+      "args": [
+        "mcp.github.personal-access-token",
+        "--",
+        "mcp-remote",
+        "https://api.githubcopilot.com/mcp/readonly",
+        "--header",
+        "Authorization: Bearer {1}",
+      ],
+    },
+    "bybit": {
+      "command": "mcp-keychain",
+      "args": [
+        "mcp.bybit.api-key",
+        "mcp.bybit.api-secret",
+        "--",
+        "env",
+        "BYBIT_API_KEY={1}",
+        "BYBIT_API_SECRET={2}",
+        "bybit-official-trading-server",
+      ],
+    },
   },
   "collaboration_panel": {
     "dock": "right",
