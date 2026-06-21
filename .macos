@@ -38,6 +38,7 @@ add_to_dock "/Applications/Zed.app"
 add_to_dock "/Applications/Sublime Merge.app"
 add_to_dock "/Applications/Obsidian.app"
 add_to_dock "/System/Applications/Music.App"
+add_to_dock "/Applications/Happ.app"
 
 # Dashboard: disable
 defaults write com.apple.dashboard mcx-disabled -bool true

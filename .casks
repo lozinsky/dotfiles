@@ -104,3 +104,8 @@ then
   claude mcp add --scope user github -- mcp-keychain mcp.github.personal-access-token -- mcp-remote https://api.githubcopilot.com/mcp/readonly --header "Authorization: Bearer {1}"
   claude mcp add --scope user bybit -- mcp-keychain mcp.bybit.api-key mcp.bybit.api-secret -- env BYBIT_API_KEY={1} BYBIT_API_SECRET={2} bybit-official-trading-server
 fi
+
+if should_brew_install_cask happ
+then
+  brew install --cask happ
+fi
