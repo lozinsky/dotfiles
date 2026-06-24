@@ -30,6 +30,7 @@
   },
   "agent": {
     "dock": "left",
+    "terminal_init_command": "claude --continue",
   },
   "context_servers": {
     "playwright": {
