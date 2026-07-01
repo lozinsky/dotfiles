@@ -8,6 +8,7 @@
   {
     "bindings": {
       "cmd-shift-w": "project_panel::CollapseAllEntries",
+      "cmd-alt-p": "text_finder::Toggle",
     },
   },
   {
