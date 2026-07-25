@@ -95,6 +95,7 @@
     },
   },
   "git_panel": {
+    "group_by": "staging",
     "dock": "right",
   },
   "gutter": {
