@@ -20,6 +20,7 @@
     "zig": true,
     "html": true,
     "toml": true,
+    "tsgo": true,
     "emmet": true,
     "codebook": true,
     "gatito-theme": true,
@@ -128,22 +129,6 @@
         },
       },
     },
-    "vtsls": {
-      "settings": {
-        "vtsls": {
-          "experimental": {
-            "completion": {
-              "enableServerSideFuzzyMatch": true,
-            },
-          },
-        },
-        "typescript": {
-          "tsserver": {
-            "maxTsServerMemory": 16384,
-          },
-        },
-      },
-    },
   },
   "minimap": {
     "show": "never",
@@ -216,6 +201,12 @@
       ],
     },
     "JavaScript": {
+      "language_servers": [
+        "typescript-ls",
+        "!vtsls",
+        "!typescript-language-server",
+        "...",
+      ],
       "format_on_save": "on",
       "prettier": {
         "allowed": false,
@@ -268,6 +259,12 @@
       ],
     },
     "TypeScript": {
+      "language_servers": [
+        "typescript-ls",
+        "!vtsls",
+        "!typescript-language-server",
+        "...",
+      ],
       "format_on_save": "on",
       "prettier": {
         "allowed": false,
@@ -281,6 +278,12 @@
       ],
     },
     "TSX": {
+      "language_servers": [
+        "typescript-ls",
+        "!vtsls",
+        "!typescript-language-server",
+        "...",
+      ],
       "format_on_save": "on",
       "prettier": {
         "allowed": false,
