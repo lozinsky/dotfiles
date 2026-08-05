@@ -27,7 +27,7 @@
       "Bash(pip3 *)",
       "Bash(cargo *)",
       "Bash(rustup *)",
-      "Bash(asdf *)"
+      "Bash(mise *)"
     ],
     "defaultMode": "auto"
   },
