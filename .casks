@@ -6,7 +6,7 @@ should_brew_install_cask() {
 
 if should_brew_install_cask zed
 then
-  brew install --cask zed
+  brew install --no-ask --cask zed
 
   mkdir -p "$HOME/.config/zed"
 
@@ -22,7 +22,7 @@ fi
 
 if should_brew_install_cask sublime-merge
 then
-  brew install --cask sublime-merge
+  brew install --no-ask --cask sublime-merge
 
   read -s -p "To continue, you need to open Sublime Merge.app manually. Press RETURN if you are done."; echo
 
@@ -31,27 +31,27 @@ fi
 
 if should_brew_install_cask telegram
 then
-  brew install --cask telegram
+  brew install --no-ask --cask telegram
 fi
 
 if should_brew_install_cask iina
 then
-  brew install --cask iina
+  brew install --no-ask --cask iina
 fi
 
 if should_brew_install_cask bitwarden
 then
-  brew install --cask bitwarden
+  brew install --no-ask --cask bitwarden
 fi
 
 if should_brew_install_cask obsidian
 then
-  brew install --cask obsidian
+  brew install --no-ask --cask obsidian
 fi
 
 if should_brew_install_cask maccy
 then
-  brew install --cask maccy
+  brew install --no-ask --cask maccy
 
   defaults write org.p0deje.Maccy KeyboardShortcuts_popup -string "{\"carbonModifiers\":768,\"carbonKeyCode\":9}"
   defaults write org.p0deje.Maccy hideFooter -bool true
@@ -66,12 +66,12 @@ fi
 
 if should_brew_install_cask keyboardcleantool
 then
-  brew install --cask keyboardcleantool
+  brew install --no-ask --cask keyboardcleantool
 fi
 
 if should_brew_install_cask ghostty
 then
-  brew install --cask ghostty
+  brew install --no-ask --cask ghostty
 
   mkdir -p "$HOME/.config"
 
@@ -80,17 +80,17 @@ fi
 
 if should_brew_install_cask font-maple-mono
 then
-  brew install --cask font-maple-mono
+  brew install --no-ask --cask font-maple-mono
 fi
 
 if should_brew_install_cask helium-browser
 then
-  brew install --cask helium-browser
+  brew install --no-ask --cask helium-browser
 fi
 
 if should_brew_install_cask claude-code@latest
 then
-  brew install --cask claude-code@latest
+  brew install --no-ask --cask claude-code@latest
 
   mkdir -p "$HOME/.claude"
 
@@ -101,5 +101,5 @@ fi
 
 if should_brew_install_cask happ
 then
-  brew install --cask happ
+  brew install --no-ask --cask happ
 fi

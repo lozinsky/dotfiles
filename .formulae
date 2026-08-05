@@ -6,7 +6,7 @@ should_brew_install() {
 
 if should_brew_install starship
 then
-  brew install starship
+  brew install --no-ask starship
 
   mkdir -p "$HOME/.config"
 
@@ -15,17 +15,17 @@ fi
 
 if should_brew_install zsh-autosuggestions
 then
-  brew install zsh-autosuggestions
+  brew install --no-ask zsh-autosuggestions
 fi
 
 if should_brew_install zsh-syntax-highlighting
 then
-  brew install zsh-syntax-highlighting
+  brew install --no-ask zsh-syntax-highlighting
 fi
 
 if should_brew_install git
 then
-  brew install git
+  brew install --no-ask git
 
   ln -sf "$DOTFILES/.config/gitconfig" "$HOME/.gitconfig"
   ln -sf "$DOTFILES/.config/gitignore" "$HOME/.gitignore"
@@ -33,7 +33,7 @@ fi
 
 if should_brew_install mise
 then
-  brew install mise
+  brew install --no-ask mise
 
   mkdir -p "$HOME/.config/mise"
 
@@ -47,7 +47,7 @@ fi
 
 if should_brew_install docker
 then
-  brew install docker
+  brew install --no-ask docker
 
   mkdir -p "$HOME/.docker"
 
@@ -56,27 +56,27 @@ fi
 
 if should_brew_install docker-buildx
 then
-  brew install docker-buildx
+  brew install --no-ask docker-buildx
 fi
 
 if should_brew_install colima
 then
-  brew install colima
+  brew install --no-ask colima
   brew services start colima
 fi
 
 if should_brew_install mole
 then
-  brew install mole
+  brew install --no-ask mole
 fi
 
 if should_brew_install ollama
 then
-  brew install ollama
+  brew install --no-ask ollama
   brew services start ollama
 fi
 
 if should_brew_install webp
 then
-  brew install webp
+  brew install --no-ask webp
 fi
