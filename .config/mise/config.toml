@@ -7,3 +7,18 @@ python = "3"
 golangci-lint = "v2.11.4"
 rust = "1"
 zig = "0.16"
+"npm:oxfmt" = "latest"
+"npm:actions-up" = "latest"
+"npm:servor" = "latest"
+"npm:npm-check-updates" = "latest"
+"npm:mcp-remote" = "latest"
+"npm:@playwright/mcp" = "latest"
+"npm:chrome-devtools-mcp" = "latest"
+"npm:@agentclientprotocol/claude-agent-acp" = "latest"
+"npm:svgo" = "latest"
+"npm:sfw" = "latest"
+"npm:bybit-official-trading-server" = "latest"
+
+[settings]
+safe = true
+minimum_release_age = "2d"
