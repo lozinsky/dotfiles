@@ -8,6 +8,9 @@
   },
   "agent_servers": {
     "claude-acp": {
+      "default_config_options": {
+        "mode": "auto"
+      },
       "type": "custom",
       "command": "claude-agent-acp",
     },
