@@ -97,6 +97,7 @@ then
   ln -sf "$DOTFILES/.config/claude/settings.json" "$HOME/.claude/settings.json"
 
   claude plugin install superpowers
+  claude plugin install ponytail@ponytail
 fi
 
 if should_brew_install_cask happ
