@@ -3,6 +3,7 @@
     "label": "sublime merge: open",
     "command": "smerge",
     "args": ["."],
+    "reveal": "never",
     "hide": "on_success",
   },
   {
