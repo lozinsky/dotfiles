@@ -4,3 +4,4 @@ brew upgrade --no-ask
 brew cleanup
 
 mise upgrade
+mise prune -y
