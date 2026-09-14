@@ -75,6 +75,9 @@
         "bybit-official-trading-server",
       ],
     },
+    "mdn": {
+      "url": "https://mcp.mdn.mozilla.net",
+    },
   },
   "collaboration_panel": {
     "dock": "right",
