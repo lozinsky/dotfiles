@@ -140,7 +140,7 @@
     "auto_fold_dirs": false,
     "entry_spacing": "standard",
     "file_icons": false,
-    "folder_icons": false,
+    "folder_indicator": "chevron",
     "hide_root": true,
     "indent_guides": {
       "show": "never",
