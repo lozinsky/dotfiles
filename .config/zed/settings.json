@@ -9,7 +9,7 @@
   "agent_servers": {
     "claude-acp": {
       "default_config_options": {
-        "mode": "auto"
+        "mode": "auto",
       },
       "type": "custom",
       "command": "claude-agent-acp",
@@ -37,10 +37,6 @@
     "terminal_init_command": "claude --continue",
   },
   "context_servers": {
-    "playwright": {
-      "command": "playwright-mcp",
-      "args": ["--cdp-endpoint", "http://localhost:9222"],
-    },
     "chrome-devtools": {
       "command": "chrome-devtools-mcp",
       "args": ["--no-usage-statistics", "--auto-connect"],
@@ -204,12 +200,7 @@
       ],
     },
     "JavaScript": {
-      "language_servers": [
-        "typescript-ls",
-        "!vtsls",
-        "!typescript-language-server",
-        "...",
-      ],
+      "language_servers": ["typescript-ls", "!vtsls", "!typescript-language-server", "..."],
       "format_on_save": "on",
       "prettier": {
         "allowed": false,
@@ -262,12 +253,7 @@
       ],
     },
     "TypeScript": {
-      "language_servers": [
-        "typescript-ls",
-        "!vtsls",
-        "!typescript-language-server",
-        "...",
-      ],
+      "language_servers": ["typescript-ls", "!vtsls", "!typescript-language-server", "..."],
       "format_on_save": "on",
       "prettier": {
         "allowed": false,
@@ -281,12 +267,7 @@
       ],
     },
     "TSX": {
-      "language_servers": [
-        "typescript-ls",
-        "!vtsls",
-        "!typescript-language-server",
-        "...",
-      ],
+      "language_servers": ["typescript-ls", "!vtsls", "!typescript-language-server", "..."],
       "format_on_save": "on",
       "prettier": {
         "allowed": false,
