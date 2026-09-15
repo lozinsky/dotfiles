@@ -4,6 +4,11 @@ should_brew_install_cask() {
   ! brew list --cask | grep "$1" >/dev/null
 }
 
+if should_brew_install_cask google-chrome
+then
+  brew install --no-ask --cask google-chrome
+fi
+
 if should_brew_install_cask zed
 then
   brew install --no-ask --cask zed
