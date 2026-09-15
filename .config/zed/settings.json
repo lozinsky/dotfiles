@@ -41,6 +41,10 @@
       "command": "chrome-devtools-mcp",
       "args": ["--no-usage-statistics", "--auto-connect"],
     },
+    "safari-devtools": {
+      "command": "/usr/bin/safaridriver",
+      "args": ["--mcp"],
+    },
     "context7": {
       "command": "mcp-keychain",
       "args": [
