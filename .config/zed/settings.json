@@ -70,18 +70,6 @@
         "Authorization: Bearer {1}",
       ],
     },
-    "bybit": {
-      "command": "mcp-keychain",
-      "args": [
-        "mcp.bybit.api-key",
-        "mcp.bybit.api-secret",
-        "--",
-        "env",
-        "BYBIT_API_KEY={1}",
-        "BYBIT_API_SECRET={2}",
-        "bybit-official-trading-server",
-      ],
-    },
     "mdn": {
       "url": "https://mcp.mdn.mozilla.net",
     },

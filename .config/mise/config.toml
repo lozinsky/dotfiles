@@ -15,7 +15,6 @@ zig = "0.16"
 "npm:@agentclientprotocol/claude-agent-acp" = "latest"
 "npm:svgo" = "latest"
 "npm:sfw" = "latest"
-"npm:bybit-official-trading-server" = "latest"
 
 [settings]
 safe = true
