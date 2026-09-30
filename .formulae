@@ -69,12 +69,6 @@ then
   brew install --no-ask mole
 fi
 
-if should_brew_install ollama
-then
-  brew install --no-ask ollama
-  brew services start ollama
-fi
-
 if should_brew_install webp
 then
   brew install --no-ask webp
