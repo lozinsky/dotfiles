@@ -1,6 +1,5 @@
 [tools]
 node = "24"
-deno = "2"
 golang = "1"
 python = "3"
 golangci-lint = "v2.11.4"
