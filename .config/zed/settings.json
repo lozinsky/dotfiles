@@ -92,6 +92,10 @@
     "inline_blame": {
       "enabled": false,
     },
+    "auto_fetch": {
+      "enabled": true,
+      "interval_secs": 300,
+    },
   },
   "git_panel": {
     "group_by": "staging",
