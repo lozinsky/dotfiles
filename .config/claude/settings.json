@@ -11,29 +11,9 @@
       "Bash(dd *)",
       "Read(.env)"
     ],
-    "ask": [
-      "Bash(curl *)",
-      "Bash(rm *)",
-      "Bash(bash *)",
-      "Bash(node *)",
-      "Bash(python3 *)",
-      "Bash(git *)",
-      "Bash(docker *)",
-      "Bash(brew *)",
-      "Bash(npm *)",
-      "Bash(pnpm *)",
-      "Bash(bun *)",
-      "Bash(pip *)",
-      "Bash(pip3 *)",
-      "Bash(cargo *)",
-      "Bash(rustup *)",
-      "Bash(mise *)"
-    ],
     "defaultMode": "auto"
   },
-  "model": "opus",
   "enabledPlugins": {
-    "superpowers@claude-plugins-official": true,
     "ponytail@ponytail": true
   },
   "extraKnownMarketplaces": {
@@ -44,7 +24,16 @@
       }
     }
   },
+  "tui": "fullscreen",
   "theme": "dark-ansi",
   "preferredNotifChannel": "terminal_bell",
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "autoMode": {
+    "soft_deny": [
+      "$defaults",
+      "Installing or uninstalling anything on the machine: brew, npm/pnpm, pip, cargo, rustup, mise, docker pull/run, or piping a downloaded script into a shell",
+      "Publishing or mutating remote state: git push, git tag push, gh/glab release, npm publish",
+      "Rewriting git history or discarding uncommitted work: rebase, reset --hard, checkout --, clean, commit --amend"
+    ]
+  }
 }
