@@ -74,15 +74,6 @@ then
   brew install --no-ask --cask keyboardcleantool
 fi
 
-if should_brew_install_cask ghostty
-then
-  brew install --no-ask --cask ghostty
-
-  mkdir -p "$HOME/.config"
-
-  ln -sf "$DOTFILES/.config/ghostty" "$HOME/.config/ghostty"
-fi
-
 if should_brew_install_cask font-maple-mono
 then
   brew install --no-ask --cask font-maple-mono
