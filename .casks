@@ -113,3 +113,21 @@ if should_brew_install_cask happ
 then
   brew install --no-ask --cask happ
 fi
+
+defaults write com.superlogical.rex Workspace.appearance -string "dark"
+defaults write com.superlogical.rex Workspace.interfaceStyle -string "useTheme"
+defaults write com.superlogical.rex Workspace.darkThemeID -string "custom-D4458190-7136-4561-9776-209CB8BAB5BA"
+defaults write com.superlogical.rex Workspace.terminalFontName -string "Maple Mono"
+defaults write com.superlogical.rex Workspace.terminalFontPointSize -int 14
+defaults write com.superlogical.rex Workspace.terminalUsesDisplayP3 -bool true
+defaults write com.superlogical.rex Workspace.cursorShadersEnabled -bool true
+defaults write com.superlogical.rex Workspace.tabStyle -string "vertical"
+defaults write com.superlogical.rex Workspace.sidebarPosition -string "left"
+defaults write com.superlogical.rex Workspace.sidebarSwipe -string "optionSwipe"
+defaults write com.superlogical.rex Workspace.appIcon -string "dark"
+defaults write com.superlogical.rex Workspace.appIconVisibility -string "dockOnly"
+defaults write com.superlogical.rex Workspace.showsActivePaneBorder -bool true
+defaults write com.superlogical.rex Workspace.activePaneBorderColor -string "magenta"
+defaults write com.superlogical.rex Workspace.terminalCopyOnSelect -bool true
+defaults write com.superlogical.rex Workspace.terminalSmoothScrolling -bool true
+defaults write com.superlogical.rex Workspace.customThemes -data "$(xxd -p "$DOTFILES/.config/rex/themes.json" | tr -d '\n')"

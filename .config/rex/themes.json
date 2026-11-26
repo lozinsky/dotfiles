@@ -1,0 +1,195 @@
+[
+  {
+    "id": "custom-D4458190-7136-4561-9776-209CB8BAB5BA",
+    "name": "Gatito Dark",
+    "appearance": "dark",
+    "source": {
+      "manual": {}
+    },
+    "palette": {
+      "ansi": [
+        {
+          "red": 0.118233,
+          "green": 0.136538,
+          "blue": 0.144064,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.113725, "green": 0.137255, "blue": 0.145098, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.819506,
+          "green": 0.386855,
+          "blue": 0.391177,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.882353, "green": 0.352941, "blue": 0.376471, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.636949,
+          "green": 0.77526,
+          "blue": 0.598182,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.6, "green": 0.780392, "blue": 0.580392, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.94943,
+          "green": 0.791871,
+          "blue": 0.451364,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.980392, "green": 0.784314, "blue": 0.388235, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.444017,
+          "green": 0.594689,
+          "blue": 0.782827,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.4, "green": 0.6, "blue": 0.8, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.743069,
+          "green": 0.588107,
+          "blue": 0.760708,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.772549, "green": 0.580392, "blue": 0.772549, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.454297,
+          "green": 0.694092,
+          "blue": 0.697926,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.372549, "green": 0.701961, "blue": 0.701961, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.831373,
+          "green": 0.831373,
+          "blue": 0.831373,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.831373, "green": 0.831373, "blue": 0.831373, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.191922,
+          "green": 0.22235,
+          "blue": 0.233694,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.184314, "green": 0.223529, "blue": 0.235294, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.845674,
+          "green": 0.493257,
+          "blue": 0.499786,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.901961, "green": 0.470588, "blue": 0.490196, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.714032,
+          "green": 0.823264,
+          "blue": 0.683814,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.686275, "green": 0.827451, "blue": 0.670588, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.959488,
+          "green": 0.837051,
+          "blue": 0.566845,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.984314, "green": 0.831373, "blue": 0.52549, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.539904,
+          "green": 0.665942,
+          "blue": 0.820456,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.505882, "green": 0.670588, "blue": 0.835294, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.799134,
+          "green": 0.676402,
+          "blue": 0.813697,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.823529, "green": 0.670588, "blue": 0.823529, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.530275,
+          "green": 0.737952,
+          "blue": 0.741432,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.466667, "green": 0.745098, "blue": 0.745098, "alpha": 1, "colorSpace": "srgb" }
+        },
+        {
+          "red": 0.909804,
+          "green": 0.909804,
+          "blue": 0.909804,
+          "alpha": 1,
+          "colorSpace": "display-p3",
+          "srgbFallback": { "red": 0.909804, "green": 0.909804, "blue": 0.909804, "alpha": 1, "colorSpace": "srgb" }
+        }
+      ],
+      "paletteHarmonious": true,
+      "paletteBase": {},
+      "cursorText": {
+        "red": 0.146437,
+        "green": 0.167791,
+        "blue": 0.17897,
+        "alpha": 1,
+        "colorSpace": "display-p3",
+        "srgbFallback": { "red": 0.141176, "green": 0.168627, "blue": 0.180392, "alpha": 1, "colorSpace": "srgb" }
+      },
+      "background": {
+        "red": 0.146437,
+        "green": 0.167791,
+        "blue": 0.17897,
+        "alpha": 1,
+        "colorSpace": "display-p3",
+        "srgbFallback": { "red": 0.141176, "green": 0.168627, "blue": 0.180392, "alpha": 1, "colorSpace": "srgb" }
+      },
+      "paletteGenerate": true,
+      "paletteOverrides": {},
+      "selectionBackground": {
+        "red": 0.271019,
+        "green": 0.289451,
+        "blue": 0.296975,
+        "alpha": 1,
+        "colorSpace": "display-p3",
+        "srgbFallback": { "red": 0.266667, "green": 0.290196, "blue": 0.298039, "alpha": 1, "colorSpace": "srgb" }
+      },
+      "foreground": {
+        "red": 0.831373,
+        "green": 0.831373,
+        "blue": 0.831373,
+        "alpha": 1,
+        "colorSpace": "display-p3",
+        "srgbFallback": { "red": 0.831373, "green": 0.831373, "blue": 0.831373, "alpha": 1, "colorSpace": "srgb" }
+      },
+      "cursor": {
+        "red": 0.831373,
+        "green": 0.831373,
+        "blue": 0.831373,
+        "alpha": 1,
+        "colorSpace": "display-p3",
+        "srgbFallback": { "red": 0.831373, "green": 0.831373, "blue": 0.831373, "alpha": 1, "colorSpace": "srgb" }
+      },
+      "selectionForeground": {
+        "red": 0.831373,
+        "green": 0.831373,
+        "blue": 0.831373,
+        "alpha": 1,
+        "colorSpace": "display-p3",
+        "srgbFallback": { "red": 0.831373, "green": 0.831373, "blue": 0.831373, "alpha": 1, "colorSpace": "srgb" }
+      }
+    },
+    "createdAt": 816808541.260181
+  }
+]
