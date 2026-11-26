@@ -1,39 +1,52 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "autoCompactWindow": 500000,
+  "autoMemoryDirectory": "~/.dotfiles/.config/claude/memory",
+  "autoMode": {
+    "soft_deny": [
+      "$defaults",
+      "Installing or uninstalling anything on the machine: brew, npm/pnpm, pip, cargo, rustup, mise, docker pull/run, or piping a downloaded script into a shell",
+      "Discarding uncommitted work: reset --hard, checkout --, restore, clean, stash drop"
+    ]
+  },
+  "enabledPlugins": {
+    "ponytail@ponytail": true
+  },
   "env": {
     "DISABLE_AUTOUPDATER": "1"
   },
+  "extraKnownMarketplaces": {
+    "ponytail": {
+      "source": {
+        "repo": "DietrichGebert/ponytail",
+        "source": "github"
+      }
+    }
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "/bin/sh -c 'rex __internal session-start --agent claude --feature-session-naming=false 2>/dev/null || true'",
+            "timeout": 5,
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  },
   "permissions": {
+    "defaultMode": "auto",
     "deny": [
       "Bash(sudo *)",
       "Bash(chmod 777 *)",
       "Bash(chown *)",
       "Bash(dd *)",
       "Read(.env)"
-    ],
-    "defaultMode": "auto"
+    ]
   },
-  "enabledPlugins": {
-    "ponytail@ponytail": true
-  },
-  "extraKnownMarketplaces": {
-    "ponytail": {
-      "source": {
-        "source": "github",
-        "repo": "DietrichGebert/ponytail"
-      }
-    }
-  },
-  "tui": "fullscreen",
-  "theme": "dark-ansi",
   "preferredNotifChannel": "terminal_bell",
   "skipAutoPermissionPrompt": true,
-  "autoMode": {
-    "soft_deny": [
-      "$defaults",
-      "Installing or uninstalling anything on the machine: brew, npm/pnpm, pip, cargo, rustup, mise, docker pull/run, or piping a downloaded script into a shell",
-      "Publishing or mutating remote state: git push, git tag push, gh/glab release, npm publish",
-      "Rewriting git history or discarding uncommitted work: rebase, reset --hard, checkout --, clean, commit --amend"
-    ]
-  }
+  "theme": "dark-ansi"
 }

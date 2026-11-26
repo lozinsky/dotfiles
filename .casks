@@ -105,8 +105,13 @@ then
 
   ln -sf "$DOTFILES/.config/claude/settings.json" "$HOME/.claude/settings.json"
 
-  claude plugin install superpowers
   claude plugin install ponytail@ponytail
+
+  claude mcp add --scope user safari-devtools -- /usr/bin/safaridriver --mcp
+  claude mcp add --scope user context7 -- mcp-keychain mcp.context7.api-key -- mcp-remote https://mcp.context7.com/mcp --header "CONTEXT7_API_KEY: {1}"
+  claude mcp add --scope user github -- mcp-keychain mcp.github.personal-access-token -- mcp-remote https://api.githubcopilot.com/mcp/readonly --header "Authorization: Bearer {1}"
+  claude mcp add --scope user --transport http mdn https://mcp.mdn.mozilla.net
+  claude mcp add --scope user --transport http superlogical https://www.superlogical.com/rex/community-mcp
 fi
 
 if should_brew_install_cask happ
