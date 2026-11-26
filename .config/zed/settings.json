@@ -1,4 +1,5 @@
 {
+  "disable_ai": true,
   "use_display_p3": true,
   "cursor_animation": {
     "enabled": true
@@ -9,15 +10,6 @@
   },
   "file_finder": {
     "file_icons": false,
-  },
-  "agent_servers": {
-    "claude-acp": {
-      "default_config_options": {
-        "mode": "auto",
-      },
-      "type": "custom",
-      "command": "claude-agent-acp",
-    },
   },
   "diff_view_style": "unified",
   "use_system_window_tabs": true,
@@ -35,45 +27,6 @@
   },
   "edit_predictions": {
     "provider": "none",
-  },
-  "agent": {
-    "dock": "left",
-    "terminal_init_command": "claude --continue",
-  },
-  "context_servers": {
-    "chrome-devtools": {
-      "command": "chrome-devtools-mcp",
-      "args": ["--no-usage-statistics", "--auto-connect"],
-    },
-    "safari-devtools": {
-      "command": "/usr/bin/safaridriver",
-      "args": ["--mcp"],
-    },
-    "context7": {
-      "command": "mcp-keychain",
-      "args": [
-        "mcp.context7.api-key",
-        "--",
-        "mcp-remote",
-        "https://mcp.context7.com/mcp",
-        "--header",
-        "CONTEXT7_API_KEY: {1}",
-      ],
-    },
-    "github": {
-      "command": "mcp-keychain",
-      "args": [
-        "mcp.github.personal-access-token",
-        "--",
-        "mcp-remote",
-        "https://api.githubcopilot.com/mcp/readonly",
-        "--header",
-        "Authorization: Bearer {1}",
-      ],
-    },
-    "mdn": {
-      "url": "https://mcp.mdn.mozilla.net",
-    },
   },
   "collaboration_panel": {
     "dock": "right",

@@ -12,8 +12,6 @@ hunk = "latest"
 "npm:servor" = "latest"
 "npm:npm-check-updates" = "latest"
 "npm:mcp-remote" = "latest"
-"npm:chrome-devtools-mcp" = "latest"
-"npm:@agentclientprotocol/claude-agent-acp" = "latest"
 "npm:svgo" = "latest"
 "npm:sfw" = "latest"
 
