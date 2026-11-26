@@ -41,6 +41,11 @@ then
   ln -sf "$DOTFILES/.config/npmrc" "$HOME/.npmrc"
   ln -sf "$DOTFILES/.config/oxfmtrc.json" "$HOME/.oxfmtrc.json"
 
+  mkdir -p "$HOME/.config/hunk/extensions"
+
+  ln -sf "$DOTFILES/.config/hunk/config.toml" "$HOME/.config/hunk/config.toml"
+  ln -sf "$DOTFILES/.config/hunk/extensions/submit.ts" "$HOME/.config/hunk/extensions/submit.ts"
+
   mise -y install
 fi
 
