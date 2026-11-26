@@ -88,6 +88,15 @@ then
   brew install --no-ask --cask font-maple-mono
 fi
 
+if should_brew_install_cask terminal-browser
+then
+  brew install --no-ask --cask terminal-browser
+
+  mkdir -p "$HOME/.config/terminal-browser"
+
+  ln -sf "$DOTFILES/.config/terminal-browser/settings.json" "$HOME/.config/terminal-browser/settings.json"
+fi
+
 if should_brew_install_cask claude-code@latest
 then
   brew install --no-ask --cask claude-code@latest
