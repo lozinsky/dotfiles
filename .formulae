@@ -73,3 +73,8 @@ if should_brew_install webp
 then
   brew install --no-ask webp
 fi
+
+if should_brew_install gh
+then
+  brew install --no-ask gh
+fi
