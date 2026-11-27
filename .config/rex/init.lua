@@ -264,6 +264,40 @@ local function worktree_open(worktrees)
   checkout_open(repo, checkout)
 end
 
+local function claude_session_items(cwd)
+  local dir = os.getenv("HOME") .. "/.claude/projects/" .. (cwd:gsub("[^%w]", "-"))
+  local files = exec({ "sh", "-c", 'cd "$1" && ls -t -- *.jsonl', "sh", dir })
+  local titles = {}
+  local entries = exec({
+    "sh", "-c", 'cd "$1" && grep -E "$2" -- *.jsonl || true', "sh", dir,
+    '"type":"(custom-title|ai-title|last-prompt)"',
+  })
+
+  for file, json in entries:gmatch("([^\n:]+)%.jsonl:([^\n]+)") do
+    local entry = rex.json.decode(json) or {}
+    local t = titles[file] or {}
+
+    t.custom = entry.customTitle or t.custom
+    t.ai = entry.aiTitle or t.ai
+    t.prompt = entry.lastPrompt or t.prompt
+
+    titles[file] = t
+  end
+
+  local items = {}
+
+  for file in files:gmatch("([^\n]+)%.jsonl") do
+    local t = titles[file] or {}
+    local title = t.custom or t.ai or t.prompt
+
+    if title then
+      table.insert(items, { id = file, title = title, detail = file:sub(1, 8) })
+    end
+  end
+
+  return items
+end
+
 rex.action {
   name  = "actions",
   title = "Actions…",
@@ -289,7 +323,7 @@ rex.action {
 
 action {
   name  = "zed_open",
-  title = "Open in Zed",
+  title = "Open Zed",
   run   = function(ctx)
     local cwd = process_foreground_cwd(ctx)
     local ok, root = pcall(exec, { "git", "rev-parse", "--show-toplevel" }, {
@@ -302,7 +336,7 @@ action {
 
 action {
   name  = "smerge_open",
-  title = "Open in Sublime Merge",
+  title = "Open Sublime Merge",
   run   = function(ctx)
     local cwd = process_foreground_cwd(ctx)
 
@@ -337,16 +371,31 @@ action {
   title = "Open Claude",
   run   = function(ctx)
     local cwd = process_foreground_cwd(ctx)
-    local w, err = rex.session.new_window {
-      window_label = "Claude",
-      layout = rex.layout.block {
-        flavor = "com.superlogical.terminal.shell",
-        options = { cwd = cwd, initial_input = "claude\n" },
-      },
+
+    exec_in_new_window({ "claude" }, { cwd = cwd, label = "Claude" })
+  end,
+}
+
+action {
+  name  = "claude_resume",
+  title = "Resume Claude…",
+  run   = function(ctx)
+    local cwd = process_foreground_cwd(ctx)
+    local items = claude_session_items(cwd)
+    local session = rex.ui.pick {
+      title = "Resume Claude",
+      placeholder = "Filter sessions",
+      items = items,
     }
 
-    if w == nil then
-      error(err, 0)
+    if session == nil then
+      return
+    end
+
+    for _, item in ipairs(items) do
+      if item.id == session then
+        return exec_in_new_window({ "claude", "--resume", session }, { cwd = cwd, label = item.title })
+      end
     end
   end,
 }
