@@ -110,6 +110,10 @@ then
   brew install --no-ask --cask happ
 fi
 
+mkdir -p "$HOME/.config/rex"
+
+ln -sf "$DOTFILES/.config/rex/init.lua" "$HOME/.config/rex/init.lua"
+
 defaults write com.superlogical.rex Workspace.appearance -string "dark"
 defaults write com.superlogical.rex Workspace.interfaceStyle -string "useTheme"
 defaults write com.superlogical.rex Workspace.darkThemeID -string "custom-D4458190-7136-4561-9776-209CB8BAB5BA"
