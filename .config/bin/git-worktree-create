@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ $# -ne 1 || ! "$1" =~ ^[A-Za-z0-9._-]+$ ]]; then
+  echo "Usage: $(basename "$0") <name>  (letters, digits, . _ -)" >&2
+  exit 1
+fi
+
+main="$(dirname "$(git rev-parse --path-format=absolute --git-common-dir)")"
+repo="$(basename "$main")"
+target="$(dirname "$main")/worktrees/$repo/$1/$repo"
+base="$(git -C "$main" symbolic-ref --short refs/remotes/origin/HEAD)"
+
+git -C "$main" fetch origin "${base#origin/}" >&2
+git -C "$main" worktree add --detach "$target" "$base" >&2
+git worktree-include "$main" "$target"
+
+echo "$target"

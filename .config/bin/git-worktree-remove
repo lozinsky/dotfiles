@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+force=false
+
+if [[ "${1:-}" == "--force" ]]; then
+  force=true
+  shift
+fi
+
+if [[ $# -ne 1 ]]; then
+  echo "Usage: $(basename "$0") [--force] <worktree-path>  (--force also deletes uncommitted changes and a branch with unpushed commits)" >&2
+  exit 1
+fi
+
+path="$1"
+main="$(dirname "$(git -C "$path" rev-parse --path-format=absolute --git-common-dir)")"
+branch="$(git -C "$path" branch --show-current)"
+
+if [[ -n "$branch" && "$force" == false ]]; then
+  unpushed="$(git -C "$path" rev-list --count "$branch" --not --remotes)"
+
+  if (( unpushed > 0 )); then
+    echo "Error: $branch has $unpushed commit(s) not on any remote. Pass --force to delete it anyway." >&2
+    exit 1
+  fi
+fi
+
+git -C "$main" worktree remove $([[ "$force" == true ]] && echo --force) "$path"
+
+if [[ -n "$branch" ]]; then
+  git -C "$main" branch -D "$branch"
+fi
+
+if [[ "$path" == */worktrees/*/*/* ]]; then
+  rm -f "$(dirname "$path")/.DS_Store"
+  rmdir "$(dirname "$path")"
+fi
