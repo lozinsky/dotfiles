@@ -99,6 +99,7 @@ then
 
   mkdir -p "$HOME/.claude"
 
+  ln -sf "$DOTFILES/.config/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
   ln -sf "$DOTFILES/.config/claude/settings.json" "$HOME/.claude/settings.json"
 
   claude plugin install ponytail@ponytail
