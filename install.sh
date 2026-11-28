@@ -37,8 +37,6 @@ then
   bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-cp "$DOTFILES/.fonts/google-sans-flex/"*.ttf "$HOME/Library/Fonts/"
-
 "$DOTFILES/.formulae"
 "$DOTFILES/.casks"
 "$DOTFILES/.macos"
