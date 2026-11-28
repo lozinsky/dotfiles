@@ -23,7 +23,6 @@
     "emmet": true,
     "codebook": true,
     "gatito-theme": true,
-    "golangci-lint": true,
   },
   "edit_predictions": {
     "provider": "none",
@@ -63,18 +62,6 @@
     "enabled": false,
   },
   "lsp": {
-    "golangci-lint": {
-      "initialization_options": {
-        "command": [
-          "golangci-lint",
-          "run",
-          "--output.json.path",
-          "stdout",
-          "--show-stats=false",
-          "--output.text.path=",
-        ],
-      },
-    },
     "vscode-css-language-server": {
       "settings": {
         "css": {
@@ -126,9 +113,6 @@
   },
   "ui_font_family": "Google Sans Flex",
   "languages": {
-    "Go": {
-      "language_servers": ["gopls", "golangci-lint"],
-    },
     "CSS": {
       "format_on_save": "on",
       "prettier": {
