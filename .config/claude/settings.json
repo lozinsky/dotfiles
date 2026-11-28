@@ -47,6 +47,7 @@
     ]
   },
   "preferredNotifChannel": "terminal_bell",
+  "attribution": false,
   "skipAutoPermissionPrompt": true,
   "theme": "dark-ansi"
 }
