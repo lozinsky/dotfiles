@@ -2,7 +2,6 @@
   {
     "bindings": {
       "cmd-shift-w": null,
-      "cmd-w": null,
     },
   },
   {
@@ -16,13 +15,6 @@
     "bindings": {
       "alt-space": "editor::ShowCompletions",
       "cmd-shift-c": "editor::CopyFileName",
-      "cmd-w": ["pane::CloseActiveItem", { "close_pinned": false }],
-    },
-  },
-  {
-    "context": "Terminal",
-    "bindings": {
-      "cmd-w": ["pane::CloseActiveItem", { "close_pinned": false }],
     },
   },
   {
