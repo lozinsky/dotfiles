@@ -105,11 +105,6 @@ then
   claude mcp add --scope user --transport http superlogical https://www.superlogical.com/rex/community-mcp
 fi
 
-if should_brew_install_cask happ
-then
-  brew install --no-ask --cask happ
-fi
-
 mkdir -p "$HOME/.config/rex"
 
 ln -sf "$DOTFILES/.config/rex/init.lua" "$HOME/.config/rex/init.lua"
