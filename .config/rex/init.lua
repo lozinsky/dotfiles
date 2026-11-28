@@ -431,6 +431,30 @@ action {
 }
 
 action {
+  name  = "repo_create",
+  title = "Create Repository…",
+  run   = function()
+    local name = rex.ui.input {
+      title = "Create repository",
+      placeholder = "Repository name",
+    }
+
+    name = name and name:match("^%s*(.-)%s*$")
+
+    if name == nil or name == "" then
+      return
+    end
+
+    local repo = repos_root .. "/" .. name
+
+    exec({ "mkdir", repo })
+    exec({ "git", "init", "--quiet" }, { cwd = repo })
+
+    checkout_open(repo, repo)
+  end,
+}
+
+action {
   name  = "worktree_create",
   title = "Create Worktree…",
   run   = function(ctx)
